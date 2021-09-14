@@ -15,7 +15,11 @@ public class Offer {
     private int idoffer;
 
     @Column(name = "code")
-    private String code = (String) UUID.randomUUID().toString().toUpperCase().subSequence(0, 8);
+    private String code = (String) UUID
+        .randomUUID()
+        .toString()
+        .toUpperCase()
+        .subSequence(0, 8);
 
     @Column(name = "datestart")
     private Date datestart;

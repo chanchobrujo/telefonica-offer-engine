@@ -37,7 +37,12 @@ public class LineMobile {
     )
     private Set<Offer> offer = new HashSet<>();
 
-    public LineMobile(String numberphone, String typeplane, String nameplane, Boolean state) {
+    public LineMobile(
+        String numberphone,
+        String typeplane,
+        String nameplane,
+        Boolean state
+    ) {
         this.numberphone = numberphone;
         this.typeplane = typeplane;
         this.nameplane = nameplane;

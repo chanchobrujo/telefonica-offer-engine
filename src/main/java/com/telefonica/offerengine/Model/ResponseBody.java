@@ -1,9 +1,7 @@
 package com.telefonica.offerengine.Model;
 
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.util.HashMap;
-import java.util.Map;
+import java.time.*;
+import java.util.*;
 import lombok.*;
 import org.springframework.http.HttpStatus;
 
