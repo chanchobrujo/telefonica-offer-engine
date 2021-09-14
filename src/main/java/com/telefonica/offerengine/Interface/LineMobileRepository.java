@@ -1,9 +1,7 @@
 package com.telefonica.offerengine.Interface;
 
-import java.util.Optional;
-
 import com.telefonica.offerengine.Data.LineMobile;
-
+import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface LineMobileRepository extends JpaRepository<LineMobile, Integer> {

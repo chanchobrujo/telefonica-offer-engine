@@ -1,9 +1,7 @@
 package com.telefonica.offerengine.Interface;
 
-import java.util.Optional;
-
 import com.telefonica.offerengine.Data.Offer;
-
+import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface OfferRepository extends JpaRepository<Offer, Integer> {
