@@ -1,0 +1,21 @@
+server:
+  port: 9565
+
+spring:
+  application:
+    name: microservices-accounts
+  datasource:
+    url: jdbc:mysql://localhost:3306/TELEFONICABD?useSSL=false&serverTimezone=America/Lima
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
