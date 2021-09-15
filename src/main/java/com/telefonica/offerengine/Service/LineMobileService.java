@@ -3,6 +3,7 @@ package com.telefonica.offerengine.Service;
 import com.telefonica.offerengine.Constant.Constants;
 import com.telefonica.offerengine.Data.Customer;
 import com.telefonica.offerengine.Data.LineMobile;
+import com.telefonica.offerengine.Data.Offer;
 import com.telefonica.offerengine.Interface.LineMobileRepository;
 import com.telefonica.offerengine.Model.*;
 import java.util.*;
@@ -22,6 +23,9 @@ public class LineMobileService {
 
     @Autowired
     private CustomerService customerService;
+
+    private HttpStatus status = HttpStatus.ACCEPTED;
+    private String message = Constants.Messages.CORRECT_DATA;
 
     public ResponseEntity<Map<String, Object>> BindingResultErrors(
         BindingResult bindinResult
@@ -54,9 +58,6 @@ public class LineMobileService {
     }
 
     public Optional<ResponseBody> save(int idcustomer, LineMobileFrom model) {
-        HttpStatus status = HttpStatus.ACCEPTED;
-        String message = Constants.Messages.CORRECT_DATA;
-
         if (customerService.findByIdcustomer(idcustomer).isPresent()) {
             Customer customer = customerService.findByIdcustomer(idcustomer).get();
             Set<LineMobile> LinemobileList = new HashSet<>();
@@ -95,6 +96,21 @@ public class LineMobileService {
             message = Constants.Messages.CLIENT_NOT_FOUND;
         }
 
+        return Optional.of(new ResponseBody(message, status));
+    }
+
+    public Optional<ResponseBody> addOffer(int idlinemobile, Offer offer) {
+        Optional<LineMobile> linemobile = linerepository.findByIdlinemobile(idlinemobile);
+        if (linemobile.isPresent()) {
+            Set<Offer> offerList = new HashSet<>();
+            offerList.add(offer);
+
+            linemobile.get().setOffer(offerList);
+            linerepository.save(linemobile.get());
+        } else {
+            status = HttpStatus.NOT_FOUND;
+            message = Constants.Messages.INVALID_DATA;
+        }
         return Optional.of(new ResponseBody(message, status));
     }
 }
