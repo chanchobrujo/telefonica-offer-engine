@@ -1,4 +1,4 @@
-package com.telefonica.offerengine.Service; 
+package com.telefonica.offerengine.Service;
 
 import com.telefonica.offerengine.Constant.Constants;
 import com.telefonica.offerengine.Data.Customer;
@@ -22,7 +22,7 @@ public class LineMobileService {
     private LineMobileRepository linerepository;
 
     @Autowired
-    private CustomerService customerService; 
+    private CustomerService customerService;
 
     private HttpStatus status = HttpStatus.ACCEPTED;
     private String message = Constants.Messages.CORRECT_DATA;
@@ -132,5 +132,5 @@ public class LineMobileService {
             message = Constants.Messages.INVALID_DATA;
         }
         return Optional.of(new ResponseBody(message, status));
-    } 
+    }
 }
