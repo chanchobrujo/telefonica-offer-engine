@@ -1,12 +1,9 @@
 package com.telefonica.offerengine.Controller;
 
-import java.util.Map;
-
-import javax.validation.Valid;
-
 import com.telefonica.offerengine.Model.OfferFrom;
 import com.telefonica.offerengine.Service.OfferService;
-
+import java.util.Map;
+import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
@@ -19,16 +16,24 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/offer")
 public class OfferController {
-    
+
     @Autowired
     private OfferService service;
-    
-    @PostMapping("/addlinebycustomer/{id}")
+
+    @PostMapping("/addofferbyline/{id}")
     public ResponseEntity<Map<String, Object>> postMethodName(
-        @PathVariable("id") int id,
+        @PathVariable("id") int idlinemobile,
         @RequestBody @Valid OfferFrom model,
         BindingResult bindinResult
     ) {
-        return null;
+        if (bindinResult.hasErrors()) return service.BindingResultErrors(bindinResult);
+        return service
+            .save(idlinemobile, model)
+            .map(mapper -> {
+                return ResponseEntity
+                    .status(mapper.getStatus())
+                    .body(mapper.getResponse());
+            })
+            .get();
     }
 }
