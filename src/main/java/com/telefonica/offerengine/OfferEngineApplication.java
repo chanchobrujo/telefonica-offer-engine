@@ -16,7 +16,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class OfferEngineApplication {
 
     // 1) localhost:9565/reports/getLineMobilebydocument/CEX/159369085
-    // 2) localhost:9565/reports/getOffersByDates/12/05/2021/16/05/2022
+    // 2) localhost:9565/reports/getOffersByDates/01-12-2000/15-12-2000
     @Bean
     public Docket APIRESTOFFERENGINE() {
         return new Docket(DocumentationType.SWAGGER_2)

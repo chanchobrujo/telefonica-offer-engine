@@ -1,6 +1,6 @@
 package com.telefonica.offerengine.Controller;
 
-import com.telefonica.offerengine.Data.Customer; 
+import com.telefonica.offerengine.Data.Customer;
 import com.telefonica.offerengine.Model.CustomerFrom;
 import com.telefonica.offerengine.Service.CustomerService;
 import java.util.*;

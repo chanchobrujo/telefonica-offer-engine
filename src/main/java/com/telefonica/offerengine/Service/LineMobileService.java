@@ -77,6 +77,8 @@ public class LineMobileService {
                 status = HttpStatus.NOT_ACCEPTABLE;
                 message = Constants.Messages.INVALID_DATA;
             } else {
+                status = HttpStatus.ACCEPTED;
+                message = Constants.Messages.CORRECT_DATA;
                 LineMobile line = new LineMobile(
                     model.getNumberphone(),
                     model.getTypeplane(),
@@ -102,10 +104,28 @@ public class LineMobileService {
     public Optional<ResponseBody> addOffer(int idlinemobile, Offer offer) {
         Optional<LineMobile> linemobile = linerepository.findByIdlinemobile(idlinemobile);
         if (linemobile.isPresent()) {
+            status = HttpStatus.ACCEPTED;
+            message = Constants.Messages.CORRECT_DATA;
+
             Set<Offer> offerList = linemobile.get().getOffer();
             offerList.add(offer);
 
             linemobile.get().setOffer(offerList);
+            linerepository.save(linemobile.get());
+        } else {
+            status = HttpStatus.NOT_FOUND;
+            message = Constants.Messages.INVALID_DATA;
+        }
+        return Optional.of(new ResponseBody(message, status));
+    }
+
+    public Optional<ResponseBody> cancellinemobile(int idlinemobile) {
+        Optional<LineMobile> linemobile = linerepository.findByIdlinemobile(idlinemobile);
+        if (linemobile.isPresent()) {
+            status = HttpStatus.ACCEPTED;
+            message = Constants.Messages.CORRECT_DATA;
+
+            linemobile.get().setState(false);
             linerepository.save(linemobile.get());
         } else {
             status = HttpStatus.NOT_FOUND;

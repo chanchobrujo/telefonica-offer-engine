@@ -17,7 +17,7 @@ public class LineMobileController {
     private LineMobileService service;
 
     @PostMapping("/addlinebycustomer/{id}")
-    public ResponseEntity<Map<String, Object>> postMethodName(
+    public ResponseEntity<Map<String, Object>> addlinebycustomer(
         @PathVariable("id") int id,
         @RequestBody @Valid LineMobileFrom model,
         BindingResult bindinResult
@@ -26,6 +26,20 @@ public class LineMobileController {
 
         return service
             .save(id, model)
+            .map(mapper -> {
+                return ResponseEntity
+                    .status(mapper.getStatus())
+                    .body(mapper.getResponse());
+            })
+            .get();
+    }
+
+    @PutMapping("/cancellinemobile/{id}")
+    public ResponseEntity<Map<String, Object>> cancellinemobile(
+        @PathVariable("id") int id
+    ) {
+        return service
+            .cancellinemobile(id)
             .map(mapper -> {
                 return ResponseEntity
                     .status(mapper.getStatus())
