@@ -14,6 +14,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.BindingResult;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @Service
 @Transactional
 public class CustomerService {
@@ -100,5 +103,12 @@ public class CustomerService {
         } else {
             return null;
         }
+    }
+
+    public List<LineMobile> getOffersByDates(String datestart,
+    String dateend){
+        log.info(datestart);
+        log.info(dateend);
+        return null;
     }
 }

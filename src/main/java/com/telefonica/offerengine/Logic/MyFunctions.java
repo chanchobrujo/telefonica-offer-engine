@@ -1,6 +1,4 @@
-package com.telefonica.offerengine.Logic;
-
-import java.text.DateFormat;
+package com.telefonica.offerengine.Logic; 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
