@@ -1,5 +1,8 @@
 package com.telefonica.offerengine.Service;
 
+import static com.telefonica.offerengine.Logic.MyFunctions.compareDate;
+import static com.telefonica.offerengine.Logic.MyFunctions.convertDateToString;
+
 import com.telefonica.offerengine.Constant.Constants;
 import com.telefonica.offerengine.Data.Customer;
 import com.telefonica.offerengine.Data.LineMobile;
@@ -8,14 +11,12 @@ import com.telefonica.offerengine.Interface.LineMobileRepository;
 import com.telefonica.offerengine.Model.*;
 import java.util.*;
 import java.util.stream.Collectors;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.BindingResult;
 
-@Slf4j
 @Service
 @Transactional
 public class LineMobileService {
@@ -25,6 +26,9 @@ public class LineMobileService {
 
     @Autowired
     private CustomerService customerService;
+
+    @Autowired
+    private OfferService offerservice;
 
     private HttpStatus status = HttpStatus.ACCEPTED;
     private String message = Constants.Messages.CORRECT_DATA;
@@ -137,8 +141,39 @@ public class LineMobileService {
     }
 
     public List<LineMobile> getOffersByDates(String datestart, String dateend) {
-        log.info(datestart);
-        log.info(dateend);
-        return null;
+        List<Integer> offerIds = offerservice
+            .findAll()
+            .stream()
+            .filter(o -> {
+                String date1 = convertDateToString(o.getDatestart());
+                return (
+                    compareDate(date1, datestart) > -1 && compareDate(date1, dateend) < 1
+                );
+            })
+            .map(Offer::getIdoffer)
+            .collect(Collectors.toList());
+
+        return linerepository
+            .findAll()
+            .stream()
+            .filter(p -> {
+                return p.getState() && p.getOffer().size() > 0;
+            })
+            .filter(pp -> {
+                return !pp
+                    .getOffer()
+                    .stream()
+                    .filter(op -> {
+                        return !offerIds
+                            .stream()
+                            .filter(idd -> idd == op.getIdoffer())
+                            .collect(Collectors.toList())
+                            .isEmpty();
+                    })
+                    .collect(Collectors.toSet())
+                    .isEmpty();
+            })
+            .distinct()
+            .collect(Collectors.toList());
     }
 }

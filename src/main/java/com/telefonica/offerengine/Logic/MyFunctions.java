@@ -14,7 +14,12 @@ public class MyFunctions {
         }
     }
 
-    public static int compareTime(String hora1, String hora2) {
+    public static String convertDateToString(Date date) {
+        SimpleDateFormat format1 = new SimpleDateFormat("dd-MM-yyyy");
+        return format1.format(date);
+    }
+
+    public static int compareDate(String hora1, String hora2) {
         try {
             SimpleDateFormat format1 = new SimpleDateFormat("dd-MM-yyyy");
 
