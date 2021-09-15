@@ -1,4 +1,5 @@
-package com.telefonica.offerengine.Service; 
+package com.telefonica.offerengine.Service;
+
 import com.telefonica.offerengine.Data.Offer;
 import com.telefonica.offerengine.Interface.OfferRepository;
 import com.telefonica.offerengine.Logic.MyFunctions;

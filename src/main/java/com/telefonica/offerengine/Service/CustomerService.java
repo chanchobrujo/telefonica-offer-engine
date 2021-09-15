@@ -2,6 +2,7 @@ package com.telefonica.offerengine.Service;
 
 import com.telefonica.offerengine.Constant.Constants;
 import com.telefonica.offerengine.Data.Customer;
+import com.telefonica.offerengine.Data.LineMobile;
 import com.telefonica.offerengine.Interface.CustomerRepository;
 import com.telefonica.offerengine.Logic.MyFunctions;
 import com.telefonica.offerengine.Model.*;
@@ -80,5 +81,21 @@ public class CustomerService {
         }
 
         return Optional.of(new ResponseBody(message, status));
+    }
+
+    public List<LineMobile> findLineMobileByDocument(String typedocument, String numberdocument) {
+        Optional<Customer> customer = repository
+            .findAll()
+            .stream()
+            .filter(c ->
+                c.getTypedocument().equals(typedocument) &&
+                c.getNumberdocument().equals(numberdocument)
+            )
+            .findFirst(); 
+        if (customer.isPresent()) { 
+            return customer.get().getLineMobile().stream().collect(Collectors.toList());
+        }else{
+            return null;
+        }
     }
 }

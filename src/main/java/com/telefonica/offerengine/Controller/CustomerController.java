@@ -1,6 +1,7 @@
 package com.telefonica.offerengine.Controller;
 
 import com.telefonica.offerengine.Data.Customer;
+import com.telefonica.offerengine.Data.LineMobile;
 import com.telefonica.offerengine.Model.CustomerFrom;
 import com.telefonica.offerengine.Service.CustomerService;
 import java.util.*;
@@ -25,6 +26,15 @@ public class CustomerController {
     @GetMapping("/{id}")
     public ResponseEntity<Optional<Customer>> findById(@PathVariable("id") int id) {
         return ResponseEntity.accepted().body(service.findByIdcustomer(id));
+    }
+
+    @GetMapping("/getLineMobilebydocument/{typedocument}/{numberdocument}")
+    public ResponseEntity<List<LineMobile>> findLineMobileByDocument(
+        @PathVariable("typedocument") String typedocument,
+        @PathVariable("numberdocument") String numberdocument
+    ) { 
+        
+        return ResponseEntity.accepted().body( service.findLineMobileByDocument(typedocument, numberdocument) );
     }
 
     @PostMapping("/save")

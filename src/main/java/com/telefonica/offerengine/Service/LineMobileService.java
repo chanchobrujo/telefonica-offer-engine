@@ -7,13 +7,13 @@ import com.telefonica.offerengine.Data.Offer;
 import com.telefonica.offerengine.Interface.LineMobileRepository;
 import com.telefonica.offerengine.Model.*;
 import java.util.*;
-import java.util.stream.Collectors;
+import java.util.stream.Collectors; 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.BindingResult;
-
+ 
 @Service
 @Transactional
 public class LineMobileService {
@@ -112,5 +112,5 @@ public class LineMobileService {
             message = Constants.Messages.INVALID_DATA;
         }
         return Optional.of(new ResponseBody(message, status));
-    }
+    } 
 }
