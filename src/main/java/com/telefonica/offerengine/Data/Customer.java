@@ -4,10 +4,10 @@ import java.util.*;
 import javax.persistence.*;
 import lombok.*;
 
-@Entity
 @Getter
 @Setter
 @NoArgsConstructor
+@Entity
 public class Customer {
 
     @Id
@@ -32,7 +32,7 @@ public class Customer {
         joinColumns = @JoinColumn(name = "idcustomer"),
         inverseJoinColumns = @JoinColumn(name = "idlinemobile")
     )
-    private Set<LineMobile> line = new HashSet<>();
+    private Set<LineMobile> LineMobile = new HashSet<>();
 
     public Customer(
         String name,

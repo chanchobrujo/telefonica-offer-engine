@@ -5,10 +5,10 @@ import java.util.*;
 import javax.persistence.*;
 import lombok.*;
 
-@Entity
 @Getter
 @Setter
 @NoArgsConstructor
+@Entity
 public class LineMobile {
 
     @Id
@@ -27,8 +27,8 @@ public class LineMobile {
     private LocalDateTime datecreated = LocalDateTime.now(ZoneId.of("America/Lima"));
 
     @Column(name = "state")
-    private Boolean state;
-
+    private Boolean state; 
+    
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
         name = "line_offer",
@@ -40,12 +40,11 @@ public class LineMobile {
     public LineMobile(
         String numberphone,
         String typeplane,
-        String nameplane,
-        Boolean state
+        String nameplane 
     ) {
         this.numberphone = numberphone;
         this.typeplane = typeplane;
         this.nameplane = nameplane;
-        this.state = state;
+        this.state = true;
     }
 }

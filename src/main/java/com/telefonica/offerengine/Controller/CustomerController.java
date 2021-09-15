@@ -35,7 +35,7 @@ public class CustomerController {
         if (bindinResult.hasErrors()) return service.BindingResultErrors(bindinResult);
 
         return service
-            .save(model)
+            .register(model)
             .map(mapper -> {
                 return ResponseEntity
                     .status(mapper.getStatus())

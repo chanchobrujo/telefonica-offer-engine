@@ -5,7 +5,7 @@ spring:
   application:
     name: APIREST-OFFER-ENGINE
   datasource:
-    url: jdbc:mysql://localhost:3306/TELEFONICABD?useSSL=false&serverTimezone=America/Lima
+    url: jdbc:mysql://localhost:3306/telefonicabd?useSSL=false&serverTimezone=America/Lima
     username: root
     password:
     driver-class-name: com.mysql.cj.jdbc.Driver

@@ -1,6 +1,4 @@
-package com.telefonica.offerengine.Controller;
-
-import com.telefonica.offerengine.Model.CustomerFrom;
+package com.telefonica.offerengine.Controller; 
 import com.telefonica.offerengine.Model.LineMobileFrom;
 import com.telefonica.offerengine.Service.LineMobileService;
 import java.util.Map;
@@ -18,7 +16,8 @@ public class LineMobileController {
     private LineMobileService service;
 
     @PostMapping("/addlinebycustomer/{id}")
-    public ResponseEntity<Map<String, Object>> postMethodName(@PathVariable("id") int id,
+    public ResponseEntity<Map<String, Object>> postMethodName(
+        @PathVariable("id") int id,
         @RequestBody @Valid LineMobileFrom model,
         BindingResult bindinResult
     ) {

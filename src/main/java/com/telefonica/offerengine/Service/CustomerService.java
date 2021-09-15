@@ -10,9 +10,11 @@ import java.util.stream.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.BindingResult;
 
 @Service
+@Transactional 
 public class CustomerService {
 
     @Autowired
@@ -45,37 +47,38 @@ public class CustomerService {
             .map(mapper -> {
                 return Optional.of(mapper);
             })
-            .orElseGet(() -> {
-                return Optional.empty();
-            });
+            .orElseGet(Optional::empty);
     }
 
-    public Optional<ResponseBody> save(CustomerFrom model) {
+    public Optional<ResponseBody> register(CustomerFrom model) {
+        Customer customer = new Customer(
+            model.getFirtsname(),
+            model.getLastname(),
+            model.getTypedocument(),
+            model.getNumberdocument(),
+            MyFunctions.convertStringToDate(model.getDateborn())
+        );
+        return save(customer);
+    }
+
+    public Optional<ResponseBody> save(Customer customer) {
         HttpStatus status = HttpStatus.ACCEPTED;
         String message = Constants.Messages.CORRECT_DATA;
 
         if (
             Constants.TYPE_DOCUMENT
                 .stream()
-                .filter(c -> c.equals(model.getTypedocument()))
+                .filter(c -> c.equals(customer.getTypedocument()))
                 .collect(Collectors.toList())
                 .isEmpty() ||
-            repository.existsByNumberdocument(model.getNumberdocument())
+            repository.existsByNumberdocument(customer.getNumberdocument())
         ) {
             status = HttpStatus.NOT_ACCEPTABLE;
             message = Constants.Messages.INVALID_DATA;
         } else {
-            Customer customer = new Customer(
-                model.getFirtsname(),
-                model.getLastname(),
-                model.getTypedocument(),
-                model.getNumberdocument(),
-                MyFunctions.convertStringToDate(model.getDateborn())
-            );             
             repository.save(customer);
-        }                                                             
-                                                                
-        return Optional.of(new ResponseBody(message, status));      
-    }                                                                           
-}                                                                  
-                                                           
+        }
+
+        return Optional.of(new ResponseBody(message, status));
+    }
+}

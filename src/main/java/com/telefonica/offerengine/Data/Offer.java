@@ -4,10 +4,10 @@ import java.util.*;
 import javax.persistence.*;
 import lombok.*;
 
-@Entity
 @Getter
 @Setter
 @NoArgsConstructor
+@Entity
 public class Offer {
 
     @Id
