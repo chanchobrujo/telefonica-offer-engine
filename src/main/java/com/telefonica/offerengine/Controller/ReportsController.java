@@ -29,8 +29,8 @@ public class ReportsController {
 
     @GetMapping("/getOffersByDates/{datestart}/{dateend}")
     public ResponseEntity<List<LineMobile>> getOffersByDates(
-        @PathVariable("typedocument") String typedocument,
-        @PathVariable("numberdocument") String numberdocument
+        @PathVariable("datestart") String datestart,
+        @PathVariable("dateend") String dateend
     ) {
         return null;
     }
