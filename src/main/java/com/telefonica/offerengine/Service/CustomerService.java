@@ -1,8 +1,12 @@
 package com.telefonica.offerengine.Service;
 
+import static com.telefonica.offerengine.Logic.MyFunctions.compareDate;
+import static com.telefonica.offerengine.Logic.MyFunctions.convertDateToString;
+
 import com.telefonica.offerengine.Constant.Constants;
 import com.telefonica.offerengine.Data.Customer;
 import com.telefonica.offerengine.Data.LineMobile;
+import com.telefonica.offerengine.Data.Offer;
 import com.telefonica.offerengine.Interface.CustomerRepository;
 import com.telefonica.offerengine.Logic.MyFunctions;
 import com.telefonica.offerengine.Model.*;
@@ -20,6 +24,9 @@ public class CustomerService {
 
     @Autowired
     private CustomerRepository repository;
+
+    @Autowired
+    private OfferService offerservice;
 
     public ResponseEntity<Map<String, Object>> BindingResultErrors(
         BindingResult bindinResult
@@ -100,5 +107,48 @@ public class CustomerService {
         } else {
             return null;
         }
+    }
+
+    public List<Customer> getOffersByDates(String datestart, String dateend) {
+        List<Integer> offerIds = offerservice
+            .findAll()
+            .stream()
+            .filter(o -> {
+                String date1 = convertDateToString(o.getDatestart());
+                return (
+                    compareDate(date1, datestart) > -1 && compareDate(date1, dateend) < 1
+                );
+            })
+            .map(Offer::getIdoffer)
+            .collect(Collectors.toList());
+
+        return repository
+            .findAll()
+            .stream()
+            .filter(l -> l.getLineMobile().size() >= 3)
+            .filter(pl ->
+                !pl
+                    .getLineMobile()
+                    .stream()
+                    .filter(opl -> opl.getState())
+                    .filter(opl -> opl.getOffer().size() > 0)
+                    .filter(opl -> {
+                        return !opl
+                            .getOffer()
+                            .stream()
+                            .filter(off -> {
+                                return !offerIds
+                                    .stream()
+                                    .filter(idd -> idd == off.getIdoffer())
+                                    .collect(Collectors.toList())
+                                    .isEmpty();
+                            })
+                            .collect(Collectors.toSet())
+                            .isEmpty();
+                    })
+                    .collect(Collectors.toList())
+                    .isEmpty()
+            )
+            .collect(Collectors.toList());
     }
 }

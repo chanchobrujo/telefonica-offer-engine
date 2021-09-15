@@ -1,5 +1,6 @@
 package com.telefonica.offerengine.Controller;
 
+import com.telefonica.offerengine.Data.Customer;
 import com.telefonica.offerengine.Data.LineMobile;
 import com.telefonica.offerengine.Service.CustomerService;
 import com.telefonica.offerengine.Service.LineMobileService;
@@ -32,12 +33,12 @@ public class ReportsController {
     }
 
     @GetMapping("/getOffersByDates/{datestart}/{dateend}")
-    public ResponseEntity<List<LineMobile>> getOffersByDates(
+    public ResponseEntity<List<Customer>> getOffersByDates(
         @PathVariable("datestart") String datestart,
         @PathVariable("dateend") String dateend
     ) {
         return ResponseEntity
             .accepted()
-            .body(linemobileservice.getOffersByDates(datestart, dateend));
+            .body(customerservice.getOffersByDates(datestart, dateend));
     }
 }

@@ -138,42 +138,5 @@ public class LineMobileService {
             message = Constants.Messages.INVALID_DATA;
         }
         return Optional.of(new ResponseBody(message, status));
-    }
-
-    public List<LineMobile> getOffersByDates(String datestart, String dateend) {
-        List<Integer> offerIds = offerservice
-            .findAll()
-            .stream()
-            .filter(o -> {
-                String date1 = convertDateToString(o.getDatestart());
-                return (
-                    compareDate(date1, datestart) > -1 && compareDate(date1, dateend) < 1
-                );
-            })
-            .map(Offer::getIdoffer)
-            .collect(Collectors.toList());
-
-        return linerepository
-            .findAll()
-            .stream()
-            .filter(p -> {
-                return p.getState() && p.getOffer().size() > 0;
-            })
-            .filter(pp -> {
-                return !pp
-                    .getOffer()
-                    .stream()
-                    .filter(op -> {
-                        return !offerIds
-                            .stream()
-                            .filter(idd -> idd == op.getIdoffer())
-                            .collect(Collectors.toList())
-                            .isEmpty();
-                    })
-                    .collect(Collectors.toSet())
-                    .isEmpty();
-            })
-            .distinct()
-            .collect(Collectors.toList());
-    }
+    } 
 }
