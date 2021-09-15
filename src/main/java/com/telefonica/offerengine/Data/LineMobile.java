@@ -27,8 +27,8 @@ public class LineMobile {
     private LocalDateTime datecreated = LocalDateTime.now(ZoneId.of("America/Lima"));
 
     @Column(name = "state")
-    private Boolean state; 
-    
+    private Boolean state;
+
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
         name = "line_offer",
@@ -37,11 +37,7 @@ public class LineMobile {
     )
     private Set<Offer> offer = new HashSet<>();
 
-    public LineMobile(
-        String numberphone,
-        String typeplane,
-        String nameplane 
-    ) {
+    public LineMobile(String numberphone, String typeplane, String nameplane) {
         this.numberphone = numberphone;
         this.typeplane = typeplane;
         this.nameplane = nameplane;

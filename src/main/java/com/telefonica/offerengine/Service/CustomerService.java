@@ -14,7 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.BindingResult;
 
 @Service
-@Transactional 
+@Transactional
 public class CustomerService {
 
     @Autowired

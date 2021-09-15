@@ -14,7 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.BindingResult;
 
 @Service
-@Transactional 
+@Transactional
 public class LineMobileService {
 
     @Autowired
@@ -83,10 +83,10 @@ public class LineMobileService {
                 );
 
                 linerepository.save(line);
-                
-                LinemobileList.add( line );
+
+                LinemobileList.add(line);
                 LinemobileList.addAll(customer.getLineMobile());
-                
+
                 customer.setLineMobile(LinemobileList);
                 customerService.save(customer);
             }
