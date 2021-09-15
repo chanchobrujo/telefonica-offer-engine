@@ -13,3 +13,9 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug

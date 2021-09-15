@@ -1,21 +1,22 @@
 package com.telefonica.offerengine.advice;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import org.apache.logging.log4j.Logger; 
+import org.apache.logging.log4j.LogManager; 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration; 
 
 @Aspect
-@Component
+@Configuration
 public class LoggingAdvice {
 
-    Logger log = LoggerFactory.getLogger(LoggingAdvice.class);
+    Logger log = LogManager.getLogger( LoggingAdvice.class );
 
-    @Pointcut(value = "execution(* com.telefonica.offerengine.*.*.*(..) )")
+    @Pointcut(value = "execution(* com.telefonica.offerengine.*.*(..) )")
     public void pointLogger() {}
 
     @Around("pointLogger()")
