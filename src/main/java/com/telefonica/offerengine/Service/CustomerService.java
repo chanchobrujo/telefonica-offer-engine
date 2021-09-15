@@ -83,7 +83,10 @@ public class CustomerService {
         return Optional.of(new ResponseBody(message, status));
     }
 
-    public List<LineMobile> findLineMobileByDocument(String typedocument, String numberdocument) {
+    public List<LineMobile> findLineMobileByDocument(
+        String typedocument,
+        String numberdocument
+    ) {
         Optional<Customer> customer = repository
             .findAll()
             .stream()
@@ -91,10 +94,10 @@ public class CustomerService {
                 c.getTypedocument().equals(typedocument) &&
                 c.getNumberdocument().equals(numberdocument)
             )
-            .findFirst(); 
-        if (customer.isPresent()) { 
+            .findFirst();
+        if (customer.isPresent()) {
             return customer.get().getLineMobile().stream().collect(Collectors.toList());
-        }else{
+        } else {
             return null;
         }
     }
