@@ -83,8 +83,9 @@ public class LineMobileService {
                 );
 
                 linerepository.save(line);
-                //customer.getLine().add(line);
+                
                 LinemobileList.add( line );
+                LinemobileList.addAll(customer.getLineMobile());
                 
                 customer.setLineMobile(LinemobileList);
                 customerService.save(customer);
