@@ -8,12 +8,14 @@ import com.telefonica.offerengine.Interface.LineMobileRepository;
 import com.telefonica.offerengine.Model.*;
 import java.util.*;
 import java.util.stream.Collectors;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.BindingResult;
 
+@Slf4j
 @Service
 @Transactional
 public class LineMobileService {
@@ -132,5 +134,11 @@ public class LineMobileService {
             message = Constants.Messages.INVALID_DATA;
         }
         return Optional.of(new ResponseBody(message, status));
+    }
+
+    public List<LineMobile> getOffersByDates(String datestart, String dateend) {
+        log.info(datestart);
+        log.info(dateend);
+        return null;
     }
 }
