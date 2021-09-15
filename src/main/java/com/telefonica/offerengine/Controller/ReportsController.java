@@ -2,8 +2,7 @@ package com.telefonica.offerengine.Controller;
 
 import com.telefonica.offerengine.Data.Customer;
 import com.telefonica.offerengine.Data.LineMobile;
-import com.telefonica.offerengine.Service.CustomerService;
-import com.telefonica.offerengine.Service.LineMobileService;
+import com.telefonica.offerengine.Service.CustomerService; 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -17,10 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ReportsController {
 
     @Autowired
-    private CustomerService customerservice;
-
-    @Autowired
-    private LineMobileService linemobileservice;
+    private CustomerService customerservice; 
 
     @GetMapping("/getLineMobilebydocument/{typedocument}/{numberdocument}")
     public ResponseEntity<List<LineMobile>> findLineMobileByDocument(

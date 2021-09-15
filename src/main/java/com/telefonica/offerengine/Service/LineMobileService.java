@@ -1,7 +1,4 @@
-package com.telefonica.offerengine.Service;
-
-import static com.telefonica.offerengine.Logic.MyFunctions.compareDate;
-import static com.telefonica.offerengine.Logic.MyFunctions.convertDateToString;
+package com.telefonica.offerengine.Service; 
 
 import com.telefonica.offerengine.Constant.Constants;
 import com.telefonica.offerengine.Data.Customer;
@@ -25,10 +22,7 @@ public class LineMobileService {
     private LineMobileRepository linerepository;
 
     @Autowired
-    private CustomerService customerService;
-
-    @Autowired
-    private OfferService offerservice;
+    private CustomerService customerService; 
 
     private HttpStatus status = HttpStatus.ACCEPTED;
     private String message = Constants.Messages.CORRECT_DATA;
