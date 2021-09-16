@@ -1,4 +1,4 @@
-package com.telefonica.offerengine.advice;
+package com.telefonica.offerengine.Log;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
