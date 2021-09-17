@@ -49,12 +49,7 @@ public class LineMobileService {
     }
 
     public Optional<LineMobile> findByIdlinemobile(int id) {
-        return linerepository
-            .findById(id)
-            .map(mapper -> {
-                return Optional.of(mapper);
-            })
-            .orElseGet(Optional::empty);
+        return linerepository.findById(id).map(Optional::of).orElseGet(Optional::empty);
     }
 
     public Optional<ResponseBody> save(int idcustomer, LineMobileFrom model) {

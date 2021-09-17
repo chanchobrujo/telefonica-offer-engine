@@ -29,11 +29,13 @@ public class OfferController {
         if (bindinResult.hasErrors()) return service.BindingResultErrors(bindinResult);
         return service
             .save(idlinemobile, model)
-            .map(mapper -> {
-                return ResponseEntity
-                    .status(mapper.getStatus())
-                    .body(mapper.getResponse());
-            })
+            .map(
+                mapper -> {
+                    return ResponseEntity
+                        .status(mapper.getStatus())
+                        .body(mapper.getResponse());
+                }
+            )
             .get();
     }
 }

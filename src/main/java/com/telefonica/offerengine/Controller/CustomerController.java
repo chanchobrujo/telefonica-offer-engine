@@ -36,11 +36,13 @@ public class CustomerController {
 
         return service
             .register(model)
-            .map(mapper -> {
-                return ResponseEntity
-                    .status(mapper.getStatus())
-                    .body(mapper.getResponse());
-            })
+            .map(
+                mapper -> {
+                    return ResponseEntity
+                        .status(mapper.getStatus())
+                        .body(mapper.getResponse());
+                }
+            )
             .get();
     }
 }

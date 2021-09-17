@@ -47,12 +47,7 @@ public class OfferService {
     }
 
     public Optional<Offer> findByIdoffer(int id) {
-        return repository
-            .findByIdoffer(id)
-            .map(mapper -> {
-                return Optional.of(mapper);
-            })
-            .orElseGet(Optional::empty);
+        return repository.findByIdoffer(id).map(Optional::of).orElseGet(Optional::empty);
     }
 
     public Optional<ResponseBody> save(int idlinemobile, OfferFrom model) {

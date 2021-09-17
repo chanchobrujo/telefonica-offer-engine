@@ -1,12 +1,9 @@
 package com.telefonica.offerengine.Service;
 
-import static com.telefonica.offerengine.Logic.MyFunctions.compareDate;
-import static com.telefonica.offerengine.Logic.MyFunctions.convertDateToString;
+import static com.telefonica.offerengine.Logic.MyFunctions.*;
 
 import com.telefonica.offerengine.Constant.Constants;
-import com.telefonica.offerengine.Data.Customer;
-import com.telefonica.offerengine.Data.LineMobile;
-import com.telefonica.offerengine.Data.Offer;
+import com.telefonica.offerengine.Data.*;
 import com.telefonica.offerengine.Interface.CustomerRepository;
 import com.telefonica.offerengine.Logic.MyFunctions;
 import com.telefonica.offerengine.Model.*;
@@ -50,12 +47,7 @@ public class CustomerService {
     }
 
     public Optional<Customer> findByIdcustomer(int id) {
-        return repository
-            .findById(id)
-            .map(mapper -> {
-                return Optional.of(mapper);
-            })
-            .orElseGet(Optional::empty);
+        return repository.findById(id).map(Optional::of).orElseGet(Optional::empty);
     }
 
     public Optional<ResponseBody> register(CustomerFrom model) {
@@ -97,9 +89,10 @@ public class CustomerService {
         Optional<Customer> customer = repository
             .findAll()
             .stream()
-            .filter(c ->
-                c.getTypedocument().equals(typedocument) &&
-                c.getNumberdocument().equals(numberdocument)
+            .filter(
+                c ->
+                    c.getTypedocument().equals(typedocument) &&
+                    c.getNumberdocument().equals(numberdocument)
             )
             .findFirst();
         if (customer.isPresent()) {
@@ -113,12 +106,15 @@ public class CustomerService {
         List<Integer> offerIds = offerservice
             .findAll()
             .stream()
-            .filter(o -> {
-                String date1 = convertDateToString(o.getDatestart());
-                return (
-                    compareDate(date1, datestart) > -1 && compareDate(date1, dateend) < 1
-                );
-            })
+            .filter(
+                o -> {
+                    String date1 = convertDateToString(o.getDatestart());
+                    return (
+                        compareDate(date1, datestart) > -1 &&
+                        compareDate(date1, dateend) < 1
+                    );
+                }
+            )
             .map(Offer::getIdoffer)
             .collect(Collectors.toList());
 
@@ -126,28 +122,33 @@ public class CustomerService {
             .findAll()
             .stream()
             .filter(l -> l.getLineMobile().size() >= 3)
-            .filter(pl ->
-                !pl
-                    .getLineMobile()
-                    .stream()
-                    .filter(opl -> opl.getState())
-                    .filter(opl -> opl.getOffer().size() > 0)
-                    .filter(opl -> {
-                        return !opl
-                            .getOffer()
-                            .stream()
-                            .filter(off -> {
-                                return !offerIds
+            .filter(
+                pl ->
+                    !pl
+                        .getLineMobile()
+                        .stream()
+                        .filter(opl -> opl.getState())
+                        .filter(opl -> opl.getOffer().size() > 0)
+                        .filter(
+                            opl -> {
+                                return !opl
+                                    .getOffer()
                                     .stream()
-                                    .filter(idd -> idd == off.getIdoffer())
-                                    .collect(Collectors.toList())
+                                    .filter(
+                                        off -> {
+                                            return !offerIds
+                                                .stream()
+                                                .filter(idd -> idd == off.getIdoffer())
+                                                .collect(Collectors.toList())
+                                                .isEmpty();
+                                        }
+                                    )
+                                    .collect(Collectors.toSet())
                                     .isEmpty();
-                            })
-                            .collect(Collectors.toSet())
-                            .isEmpty();
-                    })
-                    .collect(Collectors.toList())
-                    .isEmpty()
+                            }
+                        )
+                        .collect(Collectors.toList())
+                        .isEmpty()
             )
             .collect(Collectors.toList());
     }

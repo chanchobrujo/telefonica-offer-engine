@@ -4,7 +4,7 @@
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{yyyy-MMMM-dd HH:mm:ss} [%t] %-5level %-50c{1.} - %msg %n"/>
         </Console>
-        <File name="File" fileName="Oferts.log">
+        <File name="File" fileName="offerengine-loggers.log">
             <PatternLayout pattern="%d [%t] %-5level %-50c{1.} - %msg %n"/>
         </File>
     </Appenders>

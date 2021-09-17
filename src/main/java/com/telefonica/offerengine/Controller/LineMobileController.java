@@ -26,11 +26,13 @@ public class LineMobileController {
 
         return service
             .save(id, model)
-            .map(mapper -> {
-                return ResponseEntity
-                    .status(mapper.getStatus())
-                    .body(mapper.getResponse());
-            })
+            .map(
+                mapper -> {
+                    return ResponseEntity
+                        .status(mapper.getStatus())
+                        .body(mapper.getResponse());
+                }
+            )
             .get();
     }
 
@@ -40,11 +42,13 @@ public class LineMobileController {
     ) {
         return service
             .cancellinemobile(id)
-            .map(mapper -> {
-                return ResponseEntity
-                    .status(mapper.getStatus())
-                    .body(mapper.getResponse());
-            })
+            .map(
+                mapper -> {
+                    return ResponseEntity
+                        .status(mapper.getStatus())
+                        .body(mapper.getResponse());
+                }
+            )
             .get();
     }
 }
