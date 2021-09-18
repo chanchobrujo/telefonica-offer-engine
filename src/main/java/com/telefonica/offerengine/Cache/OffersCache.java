@@ -13,9 +13,8 @@ public class OffersCache {
     @Autowired
     private OfferService service;
 
-    @Cacheable(value = "offers", key = "#name")
-    public Optional<Offer> getOffer(String code) {
-        System.out.println(" -Retrieving from Database for name: " + code);
+    @Cacheable(value = "offerscache", key = "#code")
+    public Optional<Offer> getOffer(String code) { 
         return service.findByCode(code);
     }
 }

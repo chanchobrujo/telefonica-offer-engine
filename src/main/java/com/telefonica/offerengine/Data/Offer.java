@@ -1,5 +1,6 @@
 package com.telefonica.offerengine.Data;
 
+import java.io.Serializable;
 import java.util.*;
 import javax.persistence.*;
 import lombok.*;
@@ -8,7 +9,7 @@ import lombok.*;
 @Setter
 @NoArgsConstructor
 @Entity
-public class Offer {
+public class Offer implements Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

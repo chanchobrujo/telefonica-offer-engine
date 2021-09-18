@@ -347,3 +347,396 @@
 2021-09-17 19:29:50,775 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator          - Generating unique operation named: postMethodNameUsingPOST_1 
 2021-09-17 19:29:50,802 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - Started OfferEngineApplication in 8.032 seconds (JVM running for 9.827) 
 2021-09-17 19:29:50,806 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - API OFFER ENGINE ENABLE 
+2021-09-17 19:36:12,096 [background-preinit] INFO  o.h.v.i.u.Version                                  - HV000001: Hibernate Validator 6.2.0.Final 
+2021-09-17 19:36:12,136 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - Starting OfferEngineApplication using Java 11.0.12 on TRJ-FLMS8C3 with PID 18524 (C:\Users\kpalmall\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\telefonica-offer-engine\target\classes started by kpalmall in c:\Users\kpalmall\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\telefonica-offer-engine) 
+2021-09-17 19:36:12,140 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - No active profile set, falling back to default profiles: default 
+2021-09-17 19:36:12,184 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021-09-17 19:36:12,185 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021-09-17 19:36:13,469 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-09-17 19:36:13,580 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 92 ms. Found 3 JPA repository interfaces. 
+2021-09-17 19:36:14,679 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat initialized with port(s): 9565 (http) 
+2021-09-17 19:36:14,693 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Initializing ProtocolHandler ["http-nio-9565"] 
+2021-09-17 19:36:14,694 [restartedMain] INFO  o.a.c.c.StandardService                            - Starting service [Tomcat] 
+2021-09-17 19:36:14,695 [restartedMain] INFO  o.a.c.c.StandardEngine                             - Starting Servlet engine: [Apache Tomcat/9.0.52] 
+2021-09-17 19:36:14,807 [restartedMain] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring embedded WebApplicationContext 
+2021-09-17 19:36:14,807 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 2621 ms 
+2021-09-17 19:36:15,078 [restartedMain] INFO  o.h.j.i.u.LogHelper                                - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-09-17 19:36:15,150 [restartedMain] INFO  o.h.Version                                        - HHH000412: Hibernate ORM core version 5.4.32.Final 
+2021-09-17 19:36:15,346 [restartedMain] INFO  o.h.a.c.Version                                    - HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2021-09-17 19:36:15,467 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Starting... 
+2021-09-17 19:36:15,611 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Start completed. 
+2021-09-17 19:36:15,642 [restartedMain] INFO  o.h.d.Dialect                                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-09-17 19:36:16,522 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-09-17 19:36:16,530 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-09-17 19:36:17,693 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-09-17 19:36:18,051 [restartedMain] WARN  n.s.e.c.CacheConfiguration                         - Configuration problem for cache offers: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage. 
+2021-09-17 19:36:18,164 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+2021-09-17 19:36:18,198 [restartedMain] INFO  c.t.o.L.LoggingAdvice                              - Invoked method -> class com.telefonica.offerengine.OfferEngineApplication$$EnhancerBySpringCGLIB$$a1d97bae : APIRESTOFFERENGINE() Arguments : [] 
+2021-09-17 19:36:18,268 [restartedMain] INFO  c.t.o.L.LoggingAdvice                              - class com.telefonica.offerengine.OfferEngineApplication$$EnhancerBySpringCGLIB$$a1d97bae : APIRESTOFFERENGINE() Response : {"documentationType":{"name":"swagger","version":"2.0","mediaType":{"type":"application","subtype":"json","parameters":{},"qualityValue":1.0,"charset":null,"wildcardSubtype":false,"subtypeSuffix":null,"wildcardType":false,"concrete":true}},"groupName":"default","enabled":true} 
+2021-09-17 19:36:18,509 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729 
+2021-09-17 19:36:18,807 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Starting ProtocolHandler ["http-nio-9565"] 
+2021-09-17 19:36:18,842 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat started on port(s): 9565 (http) with context path '' 
+2021-09-17 19:36:18,844 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed 
+2021-09-17 19:36:18,875 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s) 
+2021-09-17 19:36:18,916 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references 
+2021-09-17 19:36:19,101 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator          - Generating unique operation named: postMethodNameUsingPOST_1 
+2021-09-17 19:36:19,129 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - Started OfferEngineApplication in 7.435 seconds (JVM running for 8.932) 
+2021-09-17 19:36:19,134 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - API OFFER ENGINE ENABLE 
+2021-09-17 19:36:37,828 [http-nio-9565-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2021-09-17 19:36:37,828 [http-nio-9565-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Initializing Servlet 'dispatcherServlet' 
+2021-09-17 19:36:37,830 [http-nio-9565-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Completed initialization in 1 ms 
+2021-09-17 19:36:38,029 [http-nio-9565-exec-1] DEBUG o.h.SQL                                            - select customer0_.idcustomer as idcustom1_0_, customer0_.dateborn as dateborn2_0_, customer0_.fullname as fullname3_0_, customer0_.numberdocument as numberdo4_0_, customer0_.typedocument as typedocu5_0_ from customer customer0_ 
+2021-09-17 19:36:38,078 [http-nio-9565-exec-1] DEBUG o.h.SQL                                            - select linemobile0_.idcustomer as idcustom1_1_0_, linemobile0_.idlinemobile as idlinemo2_1_0_, linemobile1_.idlinemobile as idlinemo1_3_1_, linemobile1_.datecreated as datecrea2_3_1_, linemobile1_.nameplane as nameplan3_3_1_, linemobile1_.numberphone as numberph4_3_1_, linemobile1_.state as state5_3_1_, linemobile1_.typeplane as typeplan6_3_1_ from customer_line linemobile0_ inner join line_mobile linemobile1_ on linemobile0_.idlinemobile=linemobile1_.idlinemobile where linemobile0_.idcustomer=? 
+2021-09-17 19:37:29,980 [http-nio-9565-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver        - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported] 
+2021-09-17 19:39:34,862 [http-nio-9565-exec-5] DEBUG o.h.SQL                                            - select customer0_.idcustomer as idcustom1_0_0_, customer0_.dateborn as dateborn2_0_0_, customer0_.fullname as fullname3_0_0_, customer0_.numberdocument as numberdo4_0_0_, customer0_.typedocument as typedocu5_0_0_, linemobile1_.idcustomer as idcustom1_1_1_, linemobile2_.idlinemobile as idlinemo2_1_1_, linemobile2_.idlinemobile as idlinemo1_3_2_, linemobile2_.datecreated as datecrea2_3_2_, linemobile2_.nameplane as nameplan3_3_2_, linemobile2_.numberphone as numberph4_3_2_, linemobile2_.state as state5_3_2_, linemobile2_.typeplane as typeplan6_3_2_, offer3_.idlinemobile as idlinemo1_2_3_, offer4_.idoffer as idoffer2_2_3_, offer4_.idoffer as idoffer1_4_4_, offer4_.code as code2_4_4_, offer4_.dateend as dateend3_4_4_, offer4_.datestart as datestar4_4_4_ from customer customer0_ left outer join customer_line linemobile1_ on customer0_.idcustomer=linemobile1_.idcustomer left outer join line_mobile linemobile2_ on linemobile1_.idlinemobile=linemobile2_.idlinemobile left outer join line_offer offer3_ on linemobile2_.idlinemobile=offer3_.idlinemobile left outer join offer offer4_ on offer3_.idoffer=offer4_.idoffer where customer0_.idcustomer=? 
+2021-09-17 19:39:34,887 [http-nio-9565-exec-5] DEBUG o.h.SQL                                            - select linemobile0_.idlinemobile as col_0_0_ from line_mobile linemobile0_ where linemobile0_.numberphone=? limit ? 
+2021-09-17 19:39:34,907 [http-nio-9565-exec-5] DEBUG o.h.SQL                                            - insert into line_mobile (datecreated, nameplane, numberphone, state, typeplane) values (?, ?, ?, ?, ?) 
+2021-09-17 19:39:34,933 [http-nio-9565-exec-5] DEBUG o.h.SQL                                            - insert into customer_line (idcustomer, idlinemobile) values (?, ?) 
+2021-09-17 19:39:34,935 [http-nio-9565-exec-5] DEBUG o.h.SQL                                            - select customer0_.idcustomer as col_0_0_ from customer customer0_ where customer0_.numberdocument=? limit ? 
+2021-09-17 19:39:37,155 [http-nio-9565-exec-6] DEBUG o.h.SQL                                            - select customer0_.idcustomer as idcustom1_0_, customer0_.dateborn as dateborn2_0_, customer0_.fullname as fullname3_0_, customer0_.numberdocument as numberdo4_0_, customer0_.typedocument as typedocu5_0_ from customer customer0_ 
+2021-09-17 19:39:37,156 [http-nio-9565-exec-6] DEBUG o.h.SQL                                            - select linemobile0_.idcustomer as idcustom1_1_0_, linemobile0_.idlinemobile as idlinemo2_1_0_, linemobile1_.idlinemobile as idlinemo1_3_1_, linemobile1_.datecreated as datecrea2_3_1_, linemobile1_.nameplane as nameplan3_3_1_, linemobile1_.numberphone as numberph4_3_1_, linemobile1_.state as state5_3_1_, linemobile1_.typeplane as typeplan6_3_1_ from customer_line linemobile0_ inner join line_mobile linemobile1_ on linemobile0_.idlinemobile=linemobile1_.idlinemobile where linemobile0_.idcustomer=? 
+2021-09-17 19:39:37,159 [http-nio-9565-exec-6] DEBUG o.h.SQL                                            - select offer0_.idlinemobile as idlinemo1_2_0_, offer0_.idoffer as idoffer2_2_0_, offer1_.idoffer as idoffer1_4_1_, offer1_.code as code2_4_1_, offer1_.dateend as dateend3_4_1_, offer1_.datestart as datestar4_4_1_ from line_offer offer0_ inner join offer offer1_ on offer0_.idoffer=offer1_.idoffer where offer0_.idlinemobile=? 
+2021-09-17 19:41:20,599 [http-nio-9565-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver        - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+ at [Source: (PushbackInputStream); line: 4, column: 2]] 
+2021-09-17 19:41:25,463 [http-nio-9565-exec-8] DEBUG o.h.SQL                                            - insert into offer (code, dateend, datestart) values (?, ?, ?) 
+2021-09-17 19:41:25,473 [http-nio-9565-exec-8] DEBUG o.h.SQL                                            - select linemobile0_.idlinemobile as idlinemo1_3_, linemobile0_.datecreated as datecrea2_3_, linemobile0_.nameplane as nameplan3_3_, linemobile0_.numberphone as numberph4_3_, linemobile0_.state as state5_3_, linemobile0_.typeplane as typeplan6_3_ from line_mobile linemobile0_ where linemobile0_.idlinemobile=? 
+2021-09-17 19:41:25,475 [http-nio-9565-exec-8] DEBUG o.h.SQL                                            - select offer0_.idlinemobile as idlinemo1_2_0_, offer0_.idoffer as idoffer2_2_0_, offer1_.idoffer as idoffer1_4_1_, offer1_.code as code2_4_1_, offer1_.dateend as dateend3_4_1_, offer1_.datestart as datestar4_4_1_ from line_offer offer0_ inner join offer offer1_ on offer0_.idoffer=offer1_.idoffer where offer0_.idlinemobile=? 
+2021-09-17 19:41:25,482 [http-nio-9565-exec-8] DEBUG o.h.SQL                                            - insert into line_offer (idlinemobile, idoffer) values (?, ?) 
+2021-09-17 19:41:32,317 [http-nio-9565-exec-9] DEBUG o.h.SQL                                            - select customer0_.idcustomer as idcustom1_0_, customer0_.dateborn as dateborn2_0_, customer0_.fullname as fullname3_0_, customer0_.numberdocument as numberdo4_0_, customer0_.typedocument as typedocu5_0_ from customer customer0_ 
+2021-09-17 19:41:32,319 [http-nio-9565-exec-9] DEBUG o.h.SQL                                            - select linemobile0_.idcustomer as idcustom1_1_0_, linemobile0_.idlinemobile as idlinemo2_1_0_, linemobile1_.idlinemobile as idlinemo1_3_1_, linemobile1_.datecreated as datecrea2_3_1_, linemobile1_.nameplane as nameplan3_3_1_, linemobile1_.numberphone as numberph4_3_1_, linemobile1_.state as state5_3_1_, linemobile1_.typeplane as typeplan6_3_1_ from customer_line linemobile0_ inner join line_mobile linemobile1_ on linemobile0_.idlinemobile=linemobile1_.idlinemobile where linemobile0_.idcustomer=? 
+2021-09-17 19:41:32,321 [http-nio-9565-exec-9] DEBUG o.h.SQL                                            - select offer0_.idlinemobile as idlinemo1_2_0_, offer0_.idoffer as idoffer2_2_0_, offer1_.idoffer as idoffer1_4_1_, offer1_.code as code2_4_1_, offer1_.dateend as dateend3_4_1_, offer1_.datestart as datestar4_4_1_ from line_offer offer0_ inner join offer offer1_ on offer0_.idoffer=offer1_.idoffer where offer0_.idlinemobile=? 
+2021-09-17 19:41:44,222 [http-nio-9565-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet]                - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Null key returned for cache operation (maybe you are using named params on classes without debug info?) Builder[public java.util.Optional com.telefonica.offerengine.Cache.OffersCache.getOffer(java.lang.String)] caches=[offers] | key='#name' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'] with root cause 
+java.lang.IllegalArgumentException: Null key returned for cache operation (maybe you are using named params on classes without debug info?) Builder[public java.util.Optional com.telefonica.offerengine.Cache.OffersCache.getOffer(java.lang.String)] caches=[offers] | key='#name' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'
+	at org.springframework.cache.interceptor.CacheAspectSupport.generateKey(CacheAspectSupport.java:595) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.cache.interceptor.CacheAspectSupport.findCachedItem(CacheAspectSupport.java:535) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:402) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:64) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.9.jar:5.3.9]
+	at com.telefonica.offerengine.Cache.OffersCache$$EnhancerBySpringCGLIB$$c33a1f80.getOffer(<generated>) ~[classes/:?]
+	at com.telefonica.offerengine.Controller.OfferController.findByCode(OfferController.java:33) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2021-09-17 19:43:12,350 [background-preinit] INFO  o.h.v.i.u.Version                                  - HV000001: Hibernate Validator 6.2.0.Final 
+2021-09-17 19:43:12,391 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - Starting OfferEngineApplication using Java 11.0.12 on TRJ-FLMS8C3 with PID 7736 (C:\Users\kpalmall\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\telefonica-offer-engine\target\classes started by kpalmall in c:\Users\kpalmall\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\telefonica-offer-engine) 
+2021-09-17 19:43:12,396 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - No active profile set, falling back to default profiles: default 
+2021-09-17 19:43:12,451 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021-09-17 19:43:12,452 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021-09-17 19:43:13,935 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-09-17 19:43:14,024 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 68 ms. Found 3 JPA repository interfaces. 
+2021-09-17 19:43:15,218 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat initialized with port(s): 9565 (http) 
+2021-09-17 19:43:15,241 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Initializing ProtocolHandler ["http-nio-9565"] 
+2021-09-17 19:43:15,242 [restartedMain] INFO  o.a.c.c.StandardService                            - Starting service [Tomcat] 
+2021-09-17 19:43:15,243 [restartedMain] INFO  o.a.c.c.StandardEngine                             - Starting Servlet engine: [Apache Tomcat/9.0.52] 
+2021-09-17 19:43:15,442 [restartedMain] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring embedded WebApplicationContext 
+2021-09-17 19:43:15,443 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 2989 ms 
+2021-09-17 19:43:15,752 [restartedMain] INFO  o.h.j.i.u.LogHelper                                - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-09-17 19:43:15,852 [restartedMain] INFO  o.h.Version                                        - HHH000412: Hibernate ORM core version 5.4.32.Final 
+2021-09-17 19:43:16,010 [restartedMain] INFO  o.h.a.c.Version                                    - HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2021-09-17 19:43:16,120 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Starting... 
+2021-09-17 19:43:16,341 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Start completed. 
+2021-09-17 19:43:16,382 [restartedMain] INFO  o.h.d.Dialect                                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-09-17 19:43:17,155 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-09-17 19:43:17,163 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-09-17 19:43:18,154 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-09-17 19:43:18,496 [restartedMain] WARN  n.s.e.c.CacheConfiguration                         - Configuration problem for cache offers: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage. 
+2021-09-17 19:43:18,633 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+2021-09-17 19:43:18,652 [restartedMain] INFO  c.t.o.L.LoggingAdvice                              - Invoked method -> class com.telefonica.offerengine.OfferEngineApplication$$EnhancerBySpringCGLIB$$6b642743 : APIRESTOFFERENGINE() Arguments : [] 
+2021-09-17 19:43:18,728 [restartedMain] INFO  c.t.o.L.LoggingAdvice                              - class com.telefonica.offerengine.OfferEngineApplication$$EnhancerBySpringCGLIB$$6b642743 : APIRESTOFFERENGINE() Response : {"documentationType":{"name":"swagger","version":"2.0","mediaType":{"type":"application","subtype":"json","parameters":{},"qualityValue":1.0,"charset":null,"concrete":true,"wildcardSubtype":false,"wildcardType":false,"subtypeSuffix":null}},"groupName":"default","enabled":true} 
+2021-09-17 19:43:18,975 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729 
+2021-09-17 19:43:19,229 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Starting ProtocolHandler ["http-nio-9565"] 
+2021-09-17 19:43:19,256 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat started on port(s): 9565 (http) with context path '' 
+2021-09-17 19:43:19,261 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed 
+2021-09-17 19:43:19,282 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s) 
+2021-09-17 19:43:19,324 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references 
+2021-09-17 19:43:19,482 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator          - Generating unique operation named: postMethodNameUsingPOST_1 
+2021-09-17 19:43:19,505 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - Started OfferEngineApplication in 7.703 seconds (JVM running for 9.33) 
+2021-09-17 19:43:19,517 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - API OFFER ENGINE ENABLE 
+2021-09-17 19:43:20,438 [http-nio-9565-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2021-09-17 19:43:20,438 [http-nio-9565-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Initializing Servlet 'dispatcherServlet' 
+2021-09-17 19:43:20,440 [http-nio-9565-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Completed initialization in 1 ms 
+2021-09-17 19:43:20,653 [http-nio-9565-exec-1] DEBUG o.h.SQL                                            - select customer0_.idcustomer as idcustom1_0_, customer0_.dateborn as dateborn2_0_, customer0_.fullname as fullname3_0_, customer0_.numberdocument as numberdo4_0_, customer0_.typedocument as typedocu5_0_ from customer customer0_ 
+2021-09-17 19:43:20,688 [http-nio-9565-exec-1] DEBUG o.h.SQL                                            - select linemobile0_.idcustomer as idcustom1_1_0_, linemobile0_.idlinemobile as idlinemo2_1_0_, linemobile1_.idlinemobile as idlinemo1_3_1_, linemobile1_.datecreated as datecrea2_3_1_, linemobile1_.nameplane as nameplan3_3_1_, linemobile1_.numberphone as numberph4_3_1_, linemobile1_.state as state5_3_1_, linemobile1_.typeplane as typeplan6_3_1_ from customer_line linemobile0_ inner join line_mobile linemobile1_ on linemobile0_.idlinemobile=linemobile1_.idlinemobile where linemobile0_.idcustomer=? 
+2021-09-17 19:43:20,699 [http-nio-9565-exec-1] DEBUG o.h.SQL                                            - select offer0_.idlinemobile as idlinemo1_2_0_, offer0_.idoffer as idoffer2_2_0_, offer1_.idoffer as idoffer1_4_1_, offer1_.code as code2_4_1_, offer1_.dateend as dateend3_4_1_, offer1_.datestart as datestar4_4_1_ from line_offer offer0_ inner join offer offer1_ on offer0_.idoffer=offer1_.idoffer where offer0_.idlinemobile=? 
+2021-09-17 19:43:25,390 [http-nio-9565-exec-2] DEBUG o.h.SQL                                            - select offer0_.idoffer as idoffer1_4_, offer0_.code as code2_4_, offer0_.dateend as dateend3_4_, offer0_.datestart as datestar4_4_ from offer offer0_ where offer0_.code=? 
+2021-09-17 19:43:25,409 [offers.data] ERROR n.s.e.s.d.DiskStorageFactory                       - Disk Write of CA141961 failed:  
+java.io.NotSerializableException: com.telefonica.offerengine.Data.Offer
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1185) ~[?:?]
+	at java.io.ObjectOutputStream.defaultWriteFields(ObjectOutputStream.java:1553) ~[?:?]
+	at java.io.ObjectOutputStream.defaultWriteObject(ObjectOutputStream.java:442) ~[?:?]
+	at net.sf.ehcache.Element.writeObject(Element.java:875) ~[ehcache-2.9.0.jar:2.9.0]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at java.io.ObjectStreamClass.invokeWriteObject(ObjectStreamClass.java:1145) ~[?:?]
+	at java.io.ObjectOutputStream.writeSerialData(ObjectOutputStream.java:1497) ~[?:?]
+	at java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1433) ~[?:?]
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1179) ~[?:?]
+	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:349) ~[?:?]
+	at net.sf.ehcache.util.MemoryEfficientByteArrayOutputStream.serialize(MemoryEfficientByteArrayOutputStream.java:97) ~[ehcache-2.9.0.jar:2.9.0]
+	at net.sf.ehcache.store.disk.DiskStorageFactory.serializeElement(DiskStorageFactory.java:403) ~[ehcache-2.9.0.jar:2.9.0]
+	at net.sf.ehcache.store.disk.DiskStorageFactory.write(DiskStorageFactory.java:385) ~[ehcache-2.9.0.jar:2.9.0]
+	at net.sf.ehcache.store.disk.DiskStorageFactory$DiskWriteTask.call(DiskStorageFactory.java:477) [ehcache-2.9.0.jar:2.9.0]
+	at net.sf.ehcache.store.disk.DiskStorageFactory$PersistentDiskWriteTask.call(DiskStorageFactory.java:1071) [ehcache-2.9.0.jar:2.9.0]
+	at net.sf.ehcache.store.disk.DiskStorageFactory$PersistentDiskWriteTask.call(DiskStorageFactory.java:1055) [ehcache-2.9.0.jar:2.9.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2021-09-17 19:43:51,272 [background-preinit] INFO  o.h.v.i.u.Version                                  - HV000001: Hibernate Validator 6.2.0.Final 
+2021-09-17 19:43:51,313 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - Starting OfferEngineApplication using Java 11.0.12 on TRJ-FLMS8C3 with PID 19808 (C:\Users\kpalmall\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\telefonica-offer-engine\target\classes started by kpalmall in c:\Users\kpalmall\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\telefonica-offer-engine) 
+2021-09-17 19:43:51,320 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - No active profile set, falling back to default profiles: default 
+2021-09-17 19:43:51,371 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021-09-17 19:43:51,371 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021-09-17 19:43:52,448 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-09-17 19:43:52,524 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 66 ms. Found 3 JPA repository interfaces. 
+2021-09-17 19:43:53,369 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat initialized with port(s): 9565 (http) 
+2021-09-17 19:43:53,386 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Initializing ProtocolHandler ["http-nio-9565"] 
+2021-09-17 19:43:53,386 [restartedMain] INFO  o.a.c.c.StandardService                            - Starting service [Tomcat] 
+2021-09-17 19:43:53,399 [restartedMain] INFO  o.a.c.c.StandardEngine                             - Starting Servlet engine: [Apache Tomcat/9.0.52] 
+2021-09-17 19:43:53,537 [restartedMain] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring embedded WebApplicationContext 
+2021-09-17 19:43:53,537 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 2165 ms 
+2021-09-17 19:43:53,745 [restartedMain] INFO  o.h.j.i.u.LogHelper                                - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-09-17 19:43:53,802 [restartedMain] INFO  o.h.Version                                        - HHH000412: Hibernate ORM core version 5.4.32.Final 
+2021-09-17 19:43:53,990 [restartedMain] INFO  o.h.a.c.Version                                    - HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2021-09-17 19:43:54,107 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Starting... 
+2021-09-17 19:43:54,235 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Start completed. 
+2021-09-17 19:43:54,271 [restartedMain] INFO  o.h.d.Dialect                                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-09-17 19:43:55,011 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-09-17 19:43:55,027 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-09-17 19:43:55,926 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-09-17 19:43:56,280 [restartedMain] WARN  n.s.e.c.CacheConfiguration                         - Configuration problem for cache offers: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage. 
+2021-09-17 19:43:56,412 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+2021-09-17 19:43:56,438 [restartedMain] INFO  c.t.o.L.LoggingAdvice                              - Invoked method -> class com.telefonica.offerengine.OfferEngineApplication$$EnhancerBySpringCGLIB$$ce943931 : APIRESTOFFERENGINE() Arguments : [] 
+2021-09-17 19:43:56,503 [restartedMain] INFO  c.t.o.L.LoggingAdvice                              - class com.telefonica.offerengine.OfferEngineApplication$$EnhancerBySpringCGLIB$$ce943931 : APIRESTOFFERENGINE() Response : {"documentationType":{"name":"swagger","version":"2.0","mediaType":{"type":"application","subtype":"json","parameters":{},"qualityValue":1.0,"charset":null,"concrete":true,"wildcardType":false,"subtypeSuffix":null,"wildcardSubtype":false}},"groupName":"default","enabled":true} 
+2021-09-17 19:43:56,726 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729 
+2021-09-17 19:43:57,011 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Starting ProtocolHandler ["http-nio-9565"] 
+2021-09-17 19:43:57,032 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat started on port(s): 9565 (http) with context path '' 
+2021-09-17 19:43:57,043 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed 
+2021-09-17 19:43:57,064 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s) 
+2021-09-17 19:43:57,111 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references 
+2021-09-17 19:43:57,297 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator          - Generating unique operation named: postMethodNameUsingPOST_1 
+2021-09-17 19:43:57,322 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - Started OfferEngineApplication in 6.453 seconds (JVM running for 8.103) 
+2021-09-17 19:43:57,327 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - API OFFER ENGINE ENABLE 
+2021-09-17 19:43:58,222 [http-nio-9565-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2021-09-17 19:43:58,222 [http-nio-9565-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Initializing Servlet 'dispatcherServlet' 
+2021-09-17 19:43:58,224 [http-nio-9565-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Completed initialization in 2 ms 
+2021-09-17 19:43:58,445 [http-nio-9565-exec-1] DEBUG o.h.SQL                                            - select offer0_.idoffer as idoffer1_4_, offer0_.code as code2_4_, offer0_.dateend as dateend3_4_, offer0_.datestart as datestar4_4_ from offer offer0_ where offer0_.code=? 
+2021-09-17 19:43:58,509 [offers.data] ERROR n.s.e.s.d.DiskStorageFactory                       - Disk Write of CA141961 failed:  
+java.io.NotSerializableException: com.telefonica.offerengine.Data.Offer
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1185) ~[?:?]
+	at java.io.ObjectOutputStream.defaultWriteFields(ObjectOutputStream.java:1553) ~[?:?]
+	at java.io.ObjectOutputStream.defaultWriteObject(ObjectOutputStream.java:442) ~[?:?]
+	at net.sf.ehcache.Element.writeObject(Element.java:875) ~[ehcache-2.9.0.jar:2.9.0]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at java.io.ObjectStreamClass.invokeWriteObject(ObjectStreamClass.java:1145) ~[?:?]
+	at java.io.ObjectOutputStream.writeSerialData(ObjectOutputStream.java:1497) ~[?:?]
+	at java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1433) ~[?:?]
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1179) ~[?:?]
+	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:349) ~[?:?]
+	at net.sf.ehcache.util.MemoryEfficientByteArrayOutputStream.serialize(MemoryEfficientByteArrayOutputStream.java:97) ~[ehcache-2.9.0.jar:2.9.0]
+	at net.sf.ehcache.store.disk.DiskStorageFactory.serializeElement(DiskStorageFactory.java:403) ~[ehcache-2.9.0.jar:2.9.0]
+	at net.sf.ehcache.store.disk.DiskStorageFactory.write(DiskStorageFactory.java:385) ~[ehcache-2.9.0.jar:2.9.0]
+	at net.sf.ehcache.store.disk.DiskStorageFactory$DiskWriteTask.call(DiskStorageFactory.java:477) [ehcache-2.9.0.jar:2.9.0]
+	at net.sf.ehcache.store.disk.DiskStorageFactory$PersistentDiskWriteTask.call(DiskStorageFactory.java:1071) [ehcache-2.9.0.jar:2.9.0]
+	at net.sf.ehcache.store.disk.DiskStorageFactory$PersistentDiskWriteTask.call(DiskStorageFactory.java:1055) [ehcache-2.9.0.jar:2.9.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2021-09-17 19:44:13,057 [http-nio-9565-exec-2] DEBUG o.h.SQL                                            - select offer0_.idoffer as idoffer1_4_, offer0_.code as code2_4_, offer0_.dateend as dateend3_4_, offer0_.datestart as datestar4_4_ from offer offer0_ where offer0_.code=? 
+2021-09-17 19:46:21,368 [background-preinit] INFO  o.h.v.i.u.Version                                  - HV000001: Hibernate Validator 6.2.0.Final 
+2021-09-17 19:46:21,414 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - Starting OfferEngineApplication using Java 11.0.12 on TRJ-FLMS8C3 with PID 3740 (C:\Users\kpalmall\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\telefonica-offer-engine\target\classes started by kpalmall in c:\Users\kpalmall\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\telefonica-offer-engine) 
+2021-09-17 19:46:21,418 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - No active profile set, falling back to default profiles: default 
+2021-09-17 19:46:21,479 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021-09-17 19:46:21,480 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021-09-17 19:46:22,925 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-09-17 19:46:23,018 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 81 ms. Found 3 JPA repository interfaces. 
+2021-09-17 19:46:24,124 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat initialized with port(s): 9565 (http) 
+2021-09-17 19:46:24,137 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Initializing ProtocolHandler ["http-nio-9565"] 
+2021-09-17 19:46:24,139 [restartedMain] INFO  o.a.c.c.StandardService                            - Starting service [Tomcat] 
+2021-09-17 19:46:24,140 [restartedMain] INFO  o.a.c.c.StandardEngine                             - Starting Servlet engine: [Apache Tomcat/9.0.52] 
+2021-09-17 19:46:24,280 [restartedMain] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring embedded WebApplicationContext 
+2021-09-17 19:46:24,280 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 2799 ms 
+2021-09-17 19:46:24,496 [restartedMain] INFO  o.h.j.i.u.LogHelper                                - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-09-17 19:46:24,579 [restartedMain] INFO  o.h.Version                                        - HHH000412: Hibernate ORM core version 5.4.32.Final 
+2021-09-17 19:46:24,792 [restartedMain] INFO  o.h.a.c.Version                                    - HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2021-09-17 19:46:24,936 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Starting... 
+2021-09-17 19:46:25,114 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Start completed. 
+2021-09-17 19:46:25,148 [restartedMain] INFO  o.h.d.Dialect                                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-09-17 19:46:26,275 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-09-17 19:46:26,283 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-09-17 19:46:27,256 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-09-17 19:46:27,617 [restartedMain] WARN  n.s.e.c.CacheConfiguration                         - Configuration problem for cache offers: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage. 
+2021-09-17 19:46:27,782 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+2021-09-17 19:46:27,818 [restartedMain] INFO  c.t.o.L.LoggingAdvice                              - Invoked method -> class com.telefonica.offerengine.OfferEngineApplication$$EnhancerBySpringCGLIB$$f2eb61ed : APIRESTOFFERENGINE() Arguments : [] 
+2021-09-17 19:46:27,895 [restartedMain] INFO  c.t.o.L.LoggingAdvice                              - class com.telefonica.offerengine.OfferEngineApplication$$EnhancerBySpringCGLIB$$f2eb61ed : APIRESTOFFERENGINE() Response : {"documentationType":{"name":"swagger","version":"2.0","mediaType":{"type":"application","subtype":"json","parameters":{},"qualityValue":1.0,"charset":null,"concrete":true,"wildcardType":false,"subtypeSuffix":null,"wildcardSubtype":false}},"groupName":"default","enabled":true} 
+2021-09-17 19:46:28,162 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729 
+2021-09-17 19:46:28,609 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Starting ProtocolHandler ["http-nio-9565"] 
+2021-09-17 19:46:28,658 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat started on port(s): 9565 (http) with context path '' 
+2021-09-17 19:46:28,661 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed 
+2021-09-17 19:46:28,709 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s) 
+2021-09-17 19:46:28,744 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references 
+2021-09-17 19:46:28,911 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator          - Generating unique operation named: postMethodNameUsingPOST_1 
+2021-09-17 19:46:28,943 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - Started OfferEngineApplication in 8.011 seconds (JVM running for 9.75) 
+2021-09-17 19:46:28,949 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - API OFFER ENGINE ENABLE 
+2021-09-17 19:46:39,002 [http-nio-9565-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2021-09-17 19:46:39,002 [http-nio-9565-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Initializing Servlet 'dispatcherServlet' 
+2021-09-17 19:46:39,003 [http-nio-9565-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Completed initialization in 1 ms 
+2021-09-17 19:46:39,079 [http-nio-9565-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet]                - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Null key returned for cache operation (maybe you are using named params on classes without debug info?) Builder[public java.util.Optional com.telefonica.offerengine.Cache.OffersCache.getOffer(java.lang.String)] caches=[offers] | key='#name' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'] with root cause 
+java.lang.IllegalArgumentException: Null key returned for cache operation (maybe you are using named params on classes without debug info?) Builder[public java.util.Optional com.telefonica.offerengine.Cache.OffersCache.getOffer(java.lang.String)] caches=[offers] | key='#name' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'
+	at org.springframework.cache.interceptor.CacheAspectSupport.generateKey(CacheAspectSupport.java:595) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.cache.interceptor.CacheAspectSupport.findCachedItem(CacheAspectSupport.java:535) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:402) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:64) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.9.jar:5.3.9]
+	at com.telefonica.offerengine.Cache.OffersCache$$EnhancerBySpringCGLIB$$8acfa810.getOffer(<generated>) ~[classes/:?]
+	at com.telefonica.offerengine.Controller.OfferController.findByCode(OfferController.java:33) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2021-09-17 19:53:04,582 [background-preinit] INFO  o.h.v.i.u.Version                                  - HV000001: Hibernate Validator 6.2.0.Final 
+2021-09-17 19:53:04,619 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - Starting OfferEngineApplication using Java 11.0.12 on TRJ-FLMS8C3 with PID 19036 (C:\Users\kpalmall\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\telefonica-offer-engine\target\classes started by kpalmall in c:\Users\kpalmall\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\telefonica-offer-engine) 
+2021-09-17 19:53:04,624 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - No active profile set, falling back to default profiles: default 
+2021-09-17 19:53:04,669 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021-09-17 19:53:04,670 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021-09-17 19:53:06,185 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-09-17 19:53:06,265 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 65 ms. Found 3 JPA repository interfaces. 
+2021-09-17 19:53:08,408 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat initialized with port(s): 9565 (http) 
+2021-09-17 19:53:08,419 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Initializing ProtocolHandler ["http-nio-9565"] 
+2021-09-17 19:53:08,420 [restartedMain] INFO  o.a.c.c.StandardService                            - Starting service [Tomcat] 
+2021-09-17 19:53:08,421 [restartedMain] INFO  o.a.c.c.StandardEngine                             - Starting Servlet engine: [Apache Tomcat/9.0.52] 
+2021-09-17 19:53:08,546 [restartedMain] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring embedded WebApplicationContext 
+2021-09-17 19:53:08,546 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 3875 ms 
+2021-09-17 19:53:08,768 [restartedMain] INFO  o.h.j.i.u.LogHelper                                - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-09-17 19:53:08,863 [restartedMain] INFO  o.h.Version                                        - HHH000412: Hibernate ORM core version 5.4.32.Final 
+2021-09-17 19:53:09,059 [restartedMain] INFO  o.h.a.c.Version                                    - HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2021-09-17 19:53:09,180 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Starting... 
+2021-09-17 19:53:09,354 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Start completed. 
+2021-09-17 19:53:09,434 [restartedMain] INFO  o.h.d.Dialect                                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-09-17 19:53:10,445 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-09-17 19:53:10,454 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-09-17 19:53:12,025 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-09-17 19:53:12,477 [restartedMain] WARN  n.s.e.c.CacheConfiguration                         - Configuration problem for cache offerscache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage. 
+2021-09-17 19:53:12,615 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+2021-09-17 19:53:12,643 [restartedMain] INFO  c.t.o.L.LoggingAdvice                              - Invoked method -> class com.telefonica.offerengine.OfferEngineApplication$$EnhancerBySpringCGLIB$$f028e9e0 : APIRESTOFFERENGINE() Arguments : [] 
+2021-09-17 19:53:12,703 [restartedMain] INFO  c.t.o.L.LoggingAdvice                              - class com.telefonica.offerengine.OfferEngineApplication$$EnhancerBySpringCGLIB$$f028e9e0 : APIRESTOFFERENGINE() Response : {"documentationType":{"name":"swagger","version":"2.0","mediaType":{"type":"application","subtype":"json","parameters":{},"qualityValue":1.0,"charset":null,"wildcardSubtype":false,"wildcardType":false,"subtypeSuffix":null,"concrete":true}},"groupName":"default","enabled":true} 
+2021-09-17 19:53:13,039 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729 
+2021-09-17 19:53:13,509 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Starting ProtocolHandler ["http-nio-9565"] 
+2021-09-17 19:53:13,547 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat started on port(s): 9565 (http) with context path '' 
+2021-09-17 19:53:13,553 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed 
+2021-09-17 19:53:13,588 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s) 
+2021-09-17 19:53:13,630 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references 
+2021-09-17 19:53:13,833 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator          - Generating unique operation named: postMethodNameUsingPOST_1 
+2021-09-17 19:53:13,859 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - Started OfferEngineApplication in 9.705 seconds (JVM running for 11.161) 
+2021-09-17 19:53:13,865 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - API OFFER ENGINE ENABLE 
+2021-09-17 19:53:17,335 [http-nio-9565-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2021-09-17 19:53:17,336 [http-nio-9565-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Initializing Servlet 'dispatcherServlet' 
+2021-09-17 19:53:17,337 [http-nio-9565-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Completed initialization in 1 ms 
+2021-09-17 19:53:17,607 [http-nio-9565-exec-1] DEBUG o.h.SQL                                            - select offer0_.idoffer as idoffer1_4_, offer0_.code as code2_4_, offer0_.dateend as dateend3_4_, offer0_.datestart as datestar4_4_ from offer offer0_ where offer0_.code=? 
