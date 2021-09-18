@@ -312,3 +312,38 @@
 2021-09-17 19:18:37,883 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - Started OfferEngineApplication in 1.668 seconds (JVM running for 959.547) 
 2021-09-17 19:18:37,885 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener  - Condition evaluation unchanged 
 2021-09-17 19:18:37,886 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - API OFFER ENGINE ENABLE 
+2021-09-17 19:29:43,282 [background-preinit] INFO  o.h.v.i.u.Version                                  - HV000001: Hibernate Validator 6.2.0.Final 
+2021-09-17 19:29:43,338 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - Starting OfferEngineApplication using Java 11.0.12 on TRJ-FLMS8C3 with PID 940 (C:\Users\kpalmall\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\telefonica-offer-engine\target\classes started by kpalmall in c:\Users\kpalmall\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\telefonica-offer-engine) 
+2021-09-17 19:29:43,345 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - No active profile set, falling back to default profiles: default 
+2021-09-17 19:29:43,436 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021-09-17 19:29:43,436 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021-09-17 19:29:44,850 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-09-17 19:29:44,976 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 102 ms. Found 3 JPA repository interfaces. 
+2021-09-17 19:29:45,959 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat initialized with port(s): 9565 (http) 
+2021-09-17 19:29:45,974 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Initializing ProtocolHandler ["http-nio-9565"] 
+2021-09-17 19:29:45,975 [restartedMain] INFO  o.a.c.c.StandardService                            - Starting service [Tomcat] 
+2021-09-17 19:29:45,976 [restartedMain] INFO  o.a.c.c.StandardEngine                             - Starting Servlet engine: [Apache Tomcat/9.0.52] 
+2021-09-17 19:29:46,168 [restartedMain] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring embedded WebApplicationContext 
+2021-09-17 19:29:46,169 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 2732 ms 
+2021-09-17 19:29:46,548 [restartedMain] INFO  o.h.j.i.u.LogHelper                                - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-09-17 19:29:46,611 [restartedMain] INFO  o.h.Version                                        - HHH000412: Hibernate ORM core version 5.4.32.Final 
+2021-09-17 19:29:46,771 [restartedMain] INFO  o.h.a.c.Version                                    - HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2021-09-17 19:29:46,994 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Starting... 
+2021-09-17 19:29:47,292 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Start completed. 
+2021-09-17 19:29:47,332 [restartedMain] INFO  o.h.d.Dialect                                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-09-17 19:29:48,226 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-09-17 19:29:48,235 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-09-17 19:29:49,191 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-09-17 19:29:49,664 [restartedMain] WARN  n.s.e.c.CacheConfiguration                         - Configuration problem for cache offers: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage. 
+2021-09-17 19:29:49,800 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+2021-09-17 19:29:49,834 [restartedMain] INFO  c.t.o.L.LoggingAdvice                              - Invoked method -> class com.telefonica.offerengine.OfferEngineApplication$$EnhancerBySpringCGLIB$$26c93bfc : APIRESTOFFERENGINE() Arguments : [] 
+2021-09-17 19:29:49,902 [restartedMain] INFO  c.t.o.L.LoggingAdvice                              - class com.telefonica.offerengine.OfferEngineApplication$$EnhancerBySpringCGLIB$$26c93bfc : APIRESTOFFERENGINE() Response : {"documentationType":{"name":"swagger","version":"2.0","mediaType":{"type":"application","subtype":"json","parameters":{},"qualityValue":1.0,"charset":null,"subtypeSuffix":null,"wildcardType":false,"wildcardSubtype":false,"concrete":true}},"groupName":"default","enabled":true} 
+2021-09-17 19:29:50,160 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729 
+2021-09-17 19:29:50,493 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Starting ProtocolHandler ["http-nio-9565"] 
+2021-09-17 19:29:50,518 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat started on port(s): 9565 (http) with context path '' 
+2021-09-17 19:29:50,520 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed 
+2021-09-17 19:29:50,549 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s) 
+2021-09-17 19:29:50,587 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references 
+2021-09-17 19:29:50,775 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator          - Generating unique operation named: postMethodNameUsingPOST_1 
+2021-09-17 19:29:50,802 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - Started OfferEngineApplication in 8.032 seconds (JVM running for 9.827) 
+2021-09-17 19:29:50,806 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - API OFFER ENGINE ENABLE 
