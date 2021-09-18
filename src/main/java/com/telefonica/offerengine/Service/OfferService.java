@@ -1,7 +1,7 @@
 package com.telefonica.offerengine.Service;
 
 import com.telefonica.offerengine.Data.Offer;
-import com.telefonica.offerengine.Interface.OfferRepository; 
+import com.telefonica.offerengine.Interface.OfferRepository;
 import com.telefonica.offerengine.Model.ResponseBody;
 import java.util.List;
 import java.util.Map;

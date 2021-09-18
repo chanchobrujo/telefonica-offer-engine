@@ -1,16 +1,16 @@
 package com.telefonica.offerengine.Controller;
 
 import com.telefonica.offerengine.Cache.OffersCache;
-import com.telefonica.offerengine.Data.Offer; 
+import com.telefonica.offerengine.Data.Offer;
 import com.telefonica.offerengine.Service.OfferService;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional; 
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity; 
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping; 
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

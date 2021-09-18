@@ -22,6 +22,9 @@ public class Offer implements Serializable {
         .toUpperCase()
         .subSequence(0, 8);
 
+    @Column(name = "description")
+    private String description;
+
     @Column(name = "datestart")
     private Date datestart;
 
