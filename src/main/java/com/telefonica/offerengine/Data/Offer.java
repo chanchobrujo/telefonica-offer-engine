@@ -31,8 +31,9 @@ public class Offer implements Serializable {
     @Column(name = "dateend")
     private Date dateend;
 
-    public Offer(Date datestart, Date dateend) {
+    public Offer(Date datestart, Date dateend, String description) {
         this.datestart = datestart;
         this.dateend = dateend;
+        this.description = description;
     }
 }

@@ -25,25 +25,29 @@ public class CacheUtil {
         offerCache.add(
             new Offer(
                 MyFunctions.convertStringToDate("08-09-2021"),
-                MyFunctions.convertStringToDate("08-10-2021")
+                MyFunctions.convertStringToDate("08-10-2021"),
+                "Oferta de 10 soles de descuento."
             )
         );
         offerCache.add(
             new Offer(
                 MyFunctions.convertStringToDate("07-10-2021"),
-                MyFunctions.convertStringToDate("07-11-2021")
+                MyFunctions.convertStringToDate("07-11-2021"),
+                "Oferta de 5 soles de descuento + facebook ilimitado."
             )
         );
         offerCache.add(
             new Offer(
                 MyFunctions.convertStringToDate("12-10-2021"),
-                MyFunctions.convertStringToDate("07-11-2021")
+                MyFunctions.convertStringToDate("07-11-2021"),
+                "50% De descuento"
             )
         );
         offerCache.add(
             new Offer(
                 MyFunctions.convertStringToDate("15-11-2021"),
-                MyFunctions.convertStringToDate("15-12-2021")
+                MyFunctions.convertStringToDate("15-12-2021"),
+                "Oferta de 7.5 soles de descuento"
             )
         );
         return offerCache;
