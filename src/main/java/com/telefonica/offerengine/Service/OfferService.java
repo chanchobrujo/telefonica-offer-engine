@@ -50,6 +50,10 @@ public class OfferService {
         return repository.findByIdoffer(id).map(Optional::of).orElseGet(Optional::empty);
     }
 
+    public Optional<Offer> findByCode(String code) {
+        return repository.findByCode(code).map(Optional::of).orElseGet(Optional::empty);
+    }
+
     public Optional<ResponseBody> save(int idlinemobile, OfferFrom model) {
         Offer offer = new Offer(
             MyFunctions.convertStringToDate(model.getDatestart()),
