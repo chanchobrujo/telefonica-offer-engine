@@ -4,6 +4,8 @@ import com.telefonica.offerengine.Cache.OffersCache;
 import com.telefonica.offerengine.Data.Offer;
 import com.telefonica.offerengine.Model.OfferFrom;
 import com.telefonica.offerengine.Service.OfferService;
+
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
@@ -31,6 +33,11 @@ public class OfferController {
     @GetMapping("/cacheByCode/{code}")
     public ResponseEntity<Optional<Offer>> findByCode(@PathVariable("code") String code) {
         return ResponseEntity.accepted().body(cache.getOffer(code)); 
+    } 
+
+    @GetMapping("/cacheAll/")
+    public ResponseEntity<List<Offer>> findAll( ) {
+        return ResponseEntity.accepted().body(cache.getAll()); 
     } 
 
     @PostMapping("/addofferbyline/{id}")

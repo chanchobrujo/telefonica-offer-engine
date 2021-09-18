@@ -778,3 +778,283 @@ java.lang.IllegalArgumentException: Null key returned for cache operation (maybe
 2021-09-17 19:58:58,529 [http-nio-9565-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring DispatcherServlet 'dispatcherServlet' 
 2021-09-17 19:58:58,530 [http-nio-9565-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Initializing Servlet 'dispatcherServlet' 
 2021-09-17 19:58:58,535 [http-nio-9565-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Completed initialization in 5 ms 
+2021-09-17 20:05:06,852 [background-preinit] INFO  o.h.v.i.u.Version                                  - HV000001: Hibernate Validator 6.2.0.Final 
+2021-09-17 20:05:06,893 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - Starting OfferEngineApplication using Java 11.0.12 on TRJ-FLMS8C3 with PID 17048 (C:\Users\kpalmall\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\telefonica-offer-engine\target\classes started by kpalmall in c:\Users\kpalmall\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\telefonica-offer-engine) 
+2021-09-17 20:05:06,897 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - No active profile set, falling back to default profiles: default 
+2021-09-17 20:05:06,971 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021-09-17 20:05:06,972 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021-09-17 20:05:08,158 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-09-17 20:05:08,214 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 47 ms. Found 3 JPA repository interfaces. 
+2021-09-17 20:05:09,538 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat initialized with port(s): 9565 (http) 
+2021-09-17 20:05:09,549 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Initializing ProtocolHandler ["http-nio-9565"] 
+2021-09-17 20:05:09,550 [restartedMain] INFO  o.a.c.c.StandardService                            - Starting service [Tomcat] 
+2021-09-17 20:05:09,551 [restartedMain] INFO  o.a.c.c.StandardEngine                             - Starting Servlet engine: [Apache Tomcat/9.0.52] 
+2021-09-17 20:05:09,696 [restartedMain] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring embedded WebApplicationContext 
+2021-09-17 20:05:09,697 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 2722 ms 
+2021-09-17 20:05:09,953 [restartedMain] INFO  o.h.j.i.u.LogHelper                                - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-09-17 20:05:10,009 [restartedMain] INFO  o.h.Version                                        - HHH000412: Hibernate ORM core version 5.4.32.Final 
+2021-09-17 20:05:10,167 [restartedMain] INFO  o.h.a.c.Version                                    - HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2021-09-17 20:05:10,288 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Starting... 
+2021-09-17 20:05:10,502 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Start completed. 
+2021-09-17 20:05:10,562 [restartedMain] INFO  o.h.d.Dialect                                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-09-17 20:05:11,531 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-09-17 20:05:11,540 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-09-17 20:05:13,875 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-09-17 20:05:14,314 [restartedMain] WARN  n.s.e.c.CacheConfiguration                         - Configuration problem for cache offerscache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage. 
+2021-09-17 20:05:14,445 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+2021-09-17 20:05:14,482 [restartedMain] INFO  c.t.o.L.LoggingAdvice                              - Invoked method -> class com.telefonica.offerengine.OfferEngineApplication$$EnhancerBySpringCGLIB$$4f2bd05a : APIRESTOFFERENGINE() Arguments : [] 
+2021-09-17 20:05:14,545 [restartedMain] INFO  c.t.o.L.LoggingAdvice                              - class com.telefonica.offerengine.OfferEngineApplication$$EnhancerBySpringCGLIB$$4f2bd05a : APIRESTOFFERENGINE() Response : {"documentationType":{"name":"swagger","version":"2.0","mediaType":{"type":"application","subtype":"json","parameters":{},"qualityValue":1.0,"charset":null,"subtypeSuffix":null,"wildcardType":false,"wildcardSubtype":false,"concrete":true}},"groupName":"default","enabled":true} 
+2021-09-17 20:05:14,802 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729 
+2021-09-17 20:05:15,087 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Starting ProtocolHandler ["http-nio-9565"] 
+2021-09-17 20:05:15,114 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat started on port(s): 9565 (http) with context path '' 
+2021-09-17 20:05:15,116 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed 
+2021-09-17 20:05:15,154 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s) 
+2021-09-17 20:05:15,194 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references 
+2021-09-17 20:05:15,370 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator          - Generating unique operation named: findAllUsingGET_1 
+2021-09-17 20:05:15,380 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator          - Generating unique operation named: postMethodNameUsingPOST_1 
+2021-09-17 20:05:15,410 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - Started OfferEngineApplication in 8.994 seconds (JVM running for 10.636) 
+2021-09-17 20:05:15,414 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - API OFFER ENGINE ENABLE 
+2021-09-17 20:05:31,113 [http-nio-9565-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2021-09-17 20:05:31,113 [http-nio-9565-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Initializing Servlet 'dispatcherServlet' 
+2021-09-17 20:05:31,116 [http-nio-9565-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Completed initialization in 3 ms 
+2021-09-17 20:05:31,178 [http-nio-9565-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet]                - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Null key returned for cache operation (maybe you are using named params on classes without debug info?) Builder[public java.util.List com.telefonica.offerengine.Cache.OffersCache.getAll()] caches=[offerscache] | key='#code' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'] with root cause 
+java.lang.IllegalArgumentException: Null key returned for cache operation (maybe you are using named params on classes without debug info?) Builder[public java.util.List com.telefonica.offerengine.Cache.OffersCache.getAll()] caches=[offerscache] | key='#code' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'
+	at org.springframework.cache.interceptor.CacheAspectSupport.generateKey(CacheAspectSupport.java:595) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.cache.interceptor.CacheAspectSupport.findCachedItem(CacheAspectSupport.java:535) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:402) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:64) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.9.jar:5.3.9]
+	at com.telefonica.offerengine.Cache.OffersCache$$EnhancerBySpringCGLIB$$bd78130a.getAll(<generated>) ~[classes/:?]
+	at com.telefonica.offerengine.Controller.OfferController.findAll(OfferController.java:40) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2021-09-17 20:05:45,422 [http-nio-9565-exec-2] DEBUG o.h.SQL                                            - select offer0_.idoffer as idoffer1_4_, offer0_.code as code2_4_, offer0_.dateend as dateend3_4_, offer0_.datestart as datestar4_4_ from offer offer0_ where offer0_.code=? 
+2021-09-17 20:06:11,608 [Thread-6] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default' 
+2021-09-17 20:06:11,612 [Thread-6] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown initiated... 
+2021-09-17 20:06:11,627 [Thread-6] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown completed. 
+2021-09-17 20:06:11,836 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - Starting OfferEngineApplication using Java 11.0.12 on TRJ-FLMS8C3 with PID 17048 (C:\Users\kpalmall\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\telefonica-offer-engine\target\classes started by kpalmall in c:\Users\kpalmall\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\telefonica-offer-engine) 
+2021-09-17 20:06:11,840 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - No active profile set, falling back to default profiles: default 
+2021-09-17 20:06:12,356 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-09-17 20:06:12,370 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces. 
+2021-09-17 20:06:12,637 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat initialized with port(s): 9565 (http) 
+2021-09-17 20:06:12,638 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Initializing ProtocolHandler ["http-nio-9565"] 
+2021-09-17 20:06:12,639 [restartedMain] INFO  o.a.c.c.StandardService                            - Starting service [Tomcat] 
+2021-09-17 20:06:12,639 [restartedMain] INFO  o.a.c.c.StandardEngine                             - Starting Servlet engine: [Apache Tomcat/9.0.52] 
+2021-09-17 20:06:12,674 [restartedMain] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring embedded WebApplicationContext 
+2021-09-17 20:06:12,674 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 828 ms 
+2021-09-17 20:06:12,776 [restartedMain] INFO  o.h.j.i.u.LogHelper                                - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-09-17 20:06:12,782 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-2 - Starting... 
+2021-09-17 20:06:12,788 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-2 - Start completed. 
+2021-09-17 20:06:12,788 [restartedMain] INFO  o.h.d.Dialect                                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-09-17 20:06:12,952 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-09-17 20:06:12,952 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-09-17 20:06:13,338 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-09-17 20:06:13,440 [restartedMain] WARN  n.s.e.c.CacheConfiguration                         - Configuration problem for cache offerscache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage. 
+2021-09-17 20:06:13,469 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+2021-09-17 20:06:13,474 [restartedMain] INFO  c.t.o.L.LoggingAdvice                              - Invoked method -> class com.telefonica.offerengine.OfferEngineApplication$$EnhancerBySpringCGLIB$$4f2bd05a : APIRESTOFFERENGINE() Arguments : [] 
+2021-09-17 20:06:13,486 [restartedMain] INFO  c.t.o.L.LoggingAdvice                              - class com.telefonica.offerengine.OfferEngineApplication$$EnhancerBySpringCGLIB$$4f2bd05a : APIRESTOFFERENGINE() Response : {"documentationType":{"name":"swagger","version":"2.0","mediaType":{"type":"application","subtype":"json","parameters":{},"qualityValue":1.0,"charset":null,"subtypeSuffix":null,"wildcardType":false,"wildcardSubtype":false,"concrete":true}},"groupName":"default","enabled":true} 
+2021-09-17 20:06:13,630 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729 
+2021-09-17 20:06:13,764 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Starting ProtocolHandler ["http-nio-9565"] 
+2021-09-17 20:06:13,767 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat started on port(s): 9565 (http) with context path '' 
+2021-09-17 20:06:13,768 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed 
+2021-09-17 20:06:13,769 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s) 
+2021-09-17 20:06:13,774 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references 
+2021-09-17 20:06:13,825 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator          - Generating unique operation named: findAllUsingGET_1 
+2021-09-17 20:06:13,832 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator          - Generating unique operation named: postMethodNameUsingPOST_1 
+2021-09-17 20:06:13,845 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - Started OfferEngineApplication in 2.136 seconds (JVM running for 69.071) 
+2021-09-17 20:06:13,850 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener  - Condition evaluation unchanged 
+2021-09-17 20:06:13,851 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - API OFFER ENGINE ENABLE 
+2021-09-17 20:06:28,310 [http-nio-9565-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2021-09-17 20:06:28,310 [http-nio-9565-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Initializing Servlet 'dispatcherServlet' 
+2021-09-17 20:06:28,311 [http-nio-9565-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Completed initialization in 1 ms 
+2021-09-17 20:06:28,330 [http-nio-9565-exec-1] DEBUG o.h.SQL                                            - select offer0_.idoffer as idoffer1_4_, offer0_.code as code2_4_, offer0_.dateend as dateend3_4_, offer0_.datestart as datestar4_4_ from offer offer0_ 
+2021-09-17 20:06:36,948 [Thread-9] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default' 
+2021-09-17 20:06:36,949 [Thread-9] INFO  c.z.h.HikariDataSource                             - HikariPool-2 - Shutdown initiated... 
+2021-09-17 20:06:36,957 [Thread-9] INFO  c.z.h.HikariDataSource                             - HikariPool-2 - Shutdown completed. 
+2021-09-17 20:06:37,084 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - Starting OfferEngineApplication using Java 11.0.12 on TRJ-FLMS8C3 with PID 17048 (C:\Users\kpalmall\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\telefonica-offer-engine\target\classes started by kpalmall in c:\Users\kpalmall\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\telefonica-offer-engine) 
+2021-09-17 20:06:37,086 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - No active profile set, falling back to default profiles: default 
+2021-09-17 20:06:37,414 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-09-17 20:06:37,429 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 15 ms. Found 3 JPA repository interfaces. 
+2021-09-17 20:06:37,630 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat initialized with port(s): 9565 (http) 
+2021-09-17 20:06:37,631 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Initializing ProtocolHandler ["http-nio-9565"] 
+2021-09-17 20:06:37,632 [restartedMain] INFO  o.a.c.c.StandardService                            - Starting service [Tomcat] 
+2021-09-17 20:06:37,632 [restartedMain] INFO  o.a.c.c.StandardEngine                             - Starting Servlet engine: [Apache Tomcat/9.0.52] 
+2021-09-17 20:06:37,657 [restartedMain] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring embedded WebApplicationContext 
+2021-09-17 20:06:37,657 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 568 ms 
+2021-09-17 20:06:37,725 [restartedMain] INFO  o.h.j.i.u.LogHelper                                - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-09-17 20:06:37,731 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-3 - Starting... 
+2021-09-17 20:06:37,735 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-3 - Start completed. 
+2021-09-17 20:06:37,736 [restartedMain] INFO  o.h.d.Dialect                                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-09-17 20:06:37,995 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-09-17 20:06:37,995 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-09-17 20:06:38,293 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-09-17 20:06:38,371 [restartedMain] WARN  n.s.e.c.CacheConfiguration                         - Configuration problem for cache offerscache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage. 
+2021-09-17 20:06:38,392 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+2021-09-17 20:06:38,395 [restartedMain] INFO  c.t.o.L.LoggingAdvice                              - Invoked method -> class com.telefonica.offerengine.OfferEngineApplication$$EnhancerBySpringCGLIB$$4f2bd05a : APIRESTOFFERENGINE() Arguments : [] 
+2021-09-17 20:06:38,403 [restartedMain] INFO  c.t.o.L.LoggingAdvice                              - class com.telefonica.offerengine.OfferEngineApplication$$EnhancerBySpringCGLIB$$4f2bd05a : APIRESTOFFERENGINE() Response : {"documentationType":{"name":"swagger","version":"2.0","mediaType":{"type":"application","subtype":"json","parameters":{},"qualityValue":1.0,"charset":null,"subtypeSuffix":null,"wildcardType":false,"wildcardSubtype":false,"concrete":true}},"groupName":"default","enabled":true} 
+2021-09-17 20:06:38,502 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729 
+2021-09-17 20:06:38,604 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Starting ProtocolHandler ["http-nio-9565"] 
+2021-09-17 20:06:38,607 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat started on port(s): 9565 (http) with context path '' 
+2021-09-17 20:06:38,608 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed 
+2021-09-17 20:06:38,609 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s) 
+2021-09-17 20:06:38,615 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references 
+2021-09-17 20:06:38,649 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator          - Generating unique operation named: findAllUsingGET_1 
+2021-09-17 20:06:38,655 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator          - Generating unique operation named: postMethodNameUsingPOST_1 
+2021-09-17 20:06:38,662 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - Started OfferEngineApplication in 1.641 seconds (JVM running for 93.887) 
+2021-09-17 20:06:38,665 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener  - Condition evaluation unchanged 
+2021-09-17 20:06:38,665 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - API OFFER ENGINE ENABLE 
+2021-09-17 20:06:39,921 [http-nio-9565-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2021-09-17 20:06:39,921 [http-nio-9565-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Initializing Servlet 'dispatcherServlet' 
+2021-09-17 20:06:39,922 [http-nio-9565-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Completed initialization in 1 ms 
+2021-09-17 20:06:39,924 [http-nio-9565-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet]                - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Null key returned for cache operation (maybe you are using named params on classes without debug info?) Builder[public java.util.List com.telefonica.offerengine.Cache.OffersCache.getAll()] caches=[offerscache] | key='#code' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'] with root cause 
+java.lang.IllegalArgumentException: Null key returned for cache operation (maybe you are using named params on classes without debug info?) Builder[public java.util.List com.telefonica.offerengine.Cache.OffersCache.getAll()] caches=[offerscache] | key='#code' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'
+	at org.springframework.cache.interceptor.CacheAspectSupport.generateKey(CacheAspectSupport.java:595) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.cache.interceptor.CacheAspectSupport.findCachedItem(CacheAspectSupport.java:535) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:402) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:64) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.9.jar:5.3.9]
+	at com.telefonica.offerengine.Cache.OffersCache$$EnhancerBySpringCGLIB$$bd78130a.getAll(<generated>) ~[classes/:?]
+	at com.telefonica.offerengine.Controller.OfferController.findAll(OfferController.java:40) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2021-09-17 20:07:06,743 [Thread-15] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default' 
+2021-09-17 20:07:06,743 [Thread-15] INFO  c.z.h.HikariDataSource                             - HikariPool-3 - Shutdown initiated... 
+2021-09-17 20:07:06,749 [Thread-15] INFO  c.z.h.HikariDataSource                             - HikariPool-3 - Shutdown completed. 
+2021-09-17 20:07:06,857 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - Starting OfferEngineApplication using Java 11.0.12 on TRJ-FLMS8C3 with PID 17048 (C:\Users\kpalmall\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\telefonica-offer-engine\target\classes started by kpalmall in c:\Users\kpalmall\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\telefonica-offer-engine) 
+2021-09-17 20:07:06,858 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - No active profile set, falling back to default profiles: default 
+2021-09-17 20:07:07,210 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-09-17 20:07:07,224 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces. 
+2021-09-17 20:07:07,414 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat initialized with port(s): 9565 (http) 
+2021-09-17 20:07:07,415 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Initializing ProtocolHandler ["http-nio-9565"] 
+2021-09-17 20:07:07,416 [restartedMain] INFO  o.a.c.c.StandardService                            - Starting service [Tomcat] 
+2021-09-17 20:07:07,417 [restartedMain] INFO  o.a.c.c.StandardEngine                             - Starting Servlet engine: [Apache Tomcat/9.0.52] 
+2021-09-17 20:07:07,452 [restartedMain] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring embedded WebApplicationContext 
+2021-09-17 20:07:07,452 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 590 ms 
+2021-09-17 20:07:07,521 [restartedMain] INFO  o.h.j.i.u.LogHelper                                - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-09-17 20:07:07,528 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-4 - Starting... 
+2021-09-17 20:07:07,537 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-4 - Start completed. 
+2021-09-17 20:07:07,538 [restartedMain] INFO  o.h.d.Dialect                                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-09-17 20:07:07,944 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-09-17 20:07:07,944 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-09-17 20:07:08,224 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-09-17 20:07:08,298 [restartedMain] WARN  n.s.e.c.CacheConfiguration                         - Configuration problem for cache offerscache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage. 
+2021-09-17 20:07:08,324 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+2021-09-17 20:07:08,327 [restartedMain] INFO  c.t.o.L.LoggingAdvice                              - Invoked method -> class com.telefonica.offerengine.OfferEngineApplication$$EnhancerBySpringCGLIB$$4f2bd05a : APIRESTOFFERENGINE() Arguments : [] 
+2021-09-17 20:07:08,336 [restartedMain] INFO  c.t.o.L.LoggingAdvice                              - class com.telefonica.offerengine.OfferEngineApplication$$EnhancerBySpringCGLIB$$4f2bd05a : APIRESTOFFERENGINE() Response : {"documentationType":{"name":"swagger","version":"2.0","mediaType":{"type":"application","subtype":"json","parameters":{},"qualityValue":1.0,"charset":null,"subtypeSuffix":null,"wildcardType":false,"wildcardSubtype":false,"concrete":true}},"groupName":"default","enabled":true} 
+2021-09-17 20:07:08,432 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729 
+2021-09-17 20:07:08,527 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Starting ProtocolHandler ["http-nio-9565"] 
+2021-09-17 20:07:08,530 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat started on port(s): 9565 (http) with context path '' 
+2021-09-17 20:07:08,531 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed 
+2021-09-17 20:07:08,532 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s) 
+2021-09-17 20:07:08,536 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references 
+2021-09-17 20:07:08,570 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator          - Generating unique operation named: findAllUsingGET_1 
+2021-09-17 20:07:08,576 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator          - Generating unique operation named: postMethodNameUsingPOST_1 
+2021-09-17 20:07:08,585 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - Started OfferEngineApplication in 1.782 seconds (JVM running for 123.81) 
+2021-09-17 20:07:08,587 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener  - Condition evaluation unchanged 
+2021-09-17 20:07:08,588 [restartedMain] INFO  c.t.o.OfferEngineApplication                       - API OFFER ENGINE ENABLE 
+2021-09-17 20:07:09,445 [http-nio-9565-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2021-09-17 20:07:09,445 [http-nio-9565-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Initializing Servlet 'dispatcherServlet' 
+2021-09-17 20:07:09,446 [http-nio-9565-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Completed initialization in 1 ms 
+2021-09-17 20:07:09,463 [http-nio-9565-exec-1] DEBUG o.h.SQL                                            - select offer0_.idoffer as idoffer1_4_, offer0_.code as code2_4_, offer0_.dateend as dateend3_4_, offer0_.datestart as datestar4_4_ from offer offer0_ 

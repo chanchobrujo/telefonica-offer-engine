@@ -1,5 +1,6 @@
 package com.telefonica.offerengine.Cache;
 
+import java.util.List;
 import java.util.Optional;
 
 import com.telefonica.offerengine.Data.Offer;
@@ -16,5 +17,10 @@ public class OffersCache {
     @Cacheable(value = "offerscache", key = "#code")
     public Optional<Offer> getOffer(String code) { 
         return service.findByCode(code);
+    }
+
+    @Cacheable(value = "offerscache" )
+    public List<Offer> getAll() { 
+        return service.findAll();
     }
 }
