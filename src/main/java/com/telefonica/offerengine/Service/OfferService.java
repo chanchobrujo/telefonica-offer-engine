@@ -1,9 +1,7 @@
 package com.telefonica.offerengine.Service;
 
 import com.telefonica.offerengine.Data.Offer;
-import com.telefonica.offerengine.Interface.OfferRepository;
-import com.telefonica.offerengine.Logic.MyFunctions;
-import com.telefonica.offerengine.Model.OfferFrom;
+import com.telefonica.offerengine.Interface.OfferRepository; 
 import com.telefonica.offerengine.Model.ResponseBody;
 import java.util.List;
 import java.util.Map;
@@ -54,14 +52,15 @@ public class OfferService {
         return repository.findByCode(code).map(Optional::of).orElseGet(Optional::empty);
     }
 
-    public Optional<ResponseBody> save(int idlinemobile, OfferFrom model) {
-        Offer offer = new Offer(
-            MyFunctions.convertStringToDate(model.getDatestart()),
-            MyFunctions.convertStringToDate(model.getDateend())
-        );
-
-        repository.save(offer);
-
-        return lineMobileservice.addOffer(idlinemobile, offer);
+    public Optional<ResponseBody> save(int idlinemobile, Optional<Offer> model) {
+        if (model.isEmpty()) {
+            return Optional.of(
+                new ResponseBody(
+                    "Oferta no encontrada en el catálogo.",
+                    HttpStatus.NOT_FOUND
+                )
+            );
+        }
+        return lineMobileservice.addOffer(idlinemobile, model.get());
     }
 }
