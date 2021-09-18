@@ -1,7 +1,7 @@
-swagger: "2.0"
+swagger: '2.0'
 info:
   description: Api Documentation
-  version: "1.0"
+  version: '1.0'
   title: Api Documentation
   termsOfService: urn:tos
   contact: {}
@@ -29,19 +29,19 @@ paths:
       summary: findAll
       operationId: findAllUsingGET
       produces:
-        - "*/*"
+        - '*/*'
       responses:
-        "200":
+        '200':
           description: OK
           schema:
             type: array
             items:
-              $ref: "#/definitions/Customer"
-        "401":
+              $ref: '#/definitions/Customer'
+        '401':
           description: Unauthorized
-        "403":
+        '403':
           description: Forbidden
-        "404":
+        '404':
           description: Not Found
       deprecated: false
   /customer/save:
@@ -53,28 +53,28 @@ paths:
       consumes:
         - application/json
       produces:
-        - "*/*"
+        - '*/*'
       parameters:
         - in: body
           name: model
           description: model
           required: true
           schema:
-            $ref: "#/definitions/CustomerFrom"
+            $ref: '#/definitions/CustomerFrom'
       responses:
-        "200":
+        '200':
           description: OK
           schema:
             type: object
             additionalProperties:
               type: object
-        "201":
+        '201':
           description: Created
-        "401":
+        '401':
           description: Unauthorized
-        "403":
+        '403':
           description: Forbidden
-        "404":
+        '404':
           description: Not Found
       deprecated: false
   /customer/{id}:
@@ -84,7 +84,7 @@ paths:
       summary: findById
       operationId: findByIdUsingGET
       produces:
-        - "*/*"
+        - '*/*'
       parameters:
         - name: id
           in: path
@@ -93,177 +93,163 @@ paths:
           type: integer
           format: int32
       responses:
-        "200":
+        '200':
           description: OK
           schema:
-            $ref: "#/definitions/Optional«Customer»"
-        "401":
+            $ref: '#/definitions/Optional«Customer»'
+        '401':
           description: Unauthorized
-        "403":
+        '403':
           description: Forbidden
-        "404":
+        '404':
           description: Not Found
       deprecated: false
   /error:
     get:
       tags:
         - basic-error-controller
-      summary: error
-      operationId: errorUsingGET
+      summary: errorHtml
+      operationId: errorHtmlUsingGET
       produces:
-        - "*/*"
+        - text/html
       responses:
-        "200":
+        '200':
           description: OK
           schema:
-            type: object
-            additionalProperties:
-              type: object
-        "401":
+            $ref: '#/definitions/ModelAndView'
+        '401':
           description: Unauthorized
-        "403":
+        '403':
           description: Forbidden
-        "404":
+        '404':
           description: Not Found
       deprecated: false
     head:
       tags:
         - basic-error-controller
-      summary: error
-      operationId: errorUsingHEAD
+      summary: errorHtml
+      operationId: errorHtmlUsingHEAD
       consumes:
         - application/json
       produces:
-        - "*/*"
+        - text/html
       responses:
-        "200":
+        '200':
           description: OK
           schema:
-            type: object
-            additionalProperties:
-              type: object
-        "204":
+            $ref: '#/definitions/ModelAndView'
+        '204':
           description: No Content
-        "401":
+        '401':
           description: Unauthorized
-        "403":
+        '403':
           description: Forbidden
       deprecated: false
     post:
       tags:
         - basic-error-controller
-      summary: error
-      operationId: errorUsingPOST
+      summary: errorHtml
+      operationId: errorHtmlUsingPOST
       consumes:
         - application/json
       produces:
-        - "*/*"
+        - text/html
       responses:
-        "200":
+        '200':
           description: OK
           schema:
-            type: object
-            additionalProperties:
-              type: object
-        "201":
+            $ref: '#/definitions/ModelAndView'
+        '201':
           description: Created
-        "401":
+        '401':
           description: Unauthorized
-        "403":
+        '403':
           description: Forbidden
-        "404":
+        '404':
           description: Not Found
       deprecated: false
     put:
       tags:
         - basic-error-controller
-      summary: error
-      operationId: errorUsingPUT
+      summary: errorHtml
+      operationId: errorHtmlUsingPUT
       consumes:
         - application/json
       produces:
-        - "*/*"
+        - text/html
       responses:
-        "200":
+        '200':
           description: OK
           schema:
-            type: object
-            additionalProperties:
-              type: object
-        "201":
+            $ref: '#/definitions/ModelAndView'
+        '201':
           description: Created
-        "401":
+        '401':
           description: Unauthorized
-        "403":
+        '403':
           description: Forbidden
-        "404":
+        '404':
           description: Not Found
       deprecated: false
     delete:
       tags:
         - basic-error-controller
-      summary: error
-      operationId: errorUsingDELETE
+      summary: errorHtml
+      operationId: errorHtmlUsingDELETE
       produces:
-        - "*/*"
+        - text/html
       responses:
-        "200":
+        '200':
           description: OK
           schema:
-            type: object
-            additionalProperties:
-              type: object
-        "204":
+            $ref: '#/definitions/ModelAndView'
+        '204':
           description: No Content
-        "401":
+        '401':
           description: Unauthorized
-        "403":
+        '403':
           description: Forbidden
       deprecated: false
     options:
       tags:
         - basic-error-controller
-      summary: error
-      operationId: errorUsingOPTIONS
+      summary: errorHtml
+      operationId: errorHtmlUsingOPTIONS
       consumes:
         - application/json
       produces:
-        - "*/*"
+        - text/html
       responses:
-        "200":
+        '200':
           description: OK
           schema:
-            type: object
-            additionalProperties:
-              type: object
-        "204":
+            $ref: '#/definitions/ModelAndView'
+        '204':
           description: No Content
-        "401":
+        '401':
           description: Unauthorized
-        "403":
+        '403':
           description: Forbidden
       deprecated: false
     patch:
       tags:
         - basic-error-controller
-      summary: error
-      operationId: errorUsingPATCH
+      summary: errorHtml
+      operationId: errorHtmlUsingPATCH
       consumes:
         - application/json
       produces:
-        - "*/*"
+        - text/html
       responses:
-        "200":
+        '200':
           description: OK
           schema:
-            type: object
-            additionalProperties:
-              type: object
-        "204":
+            $ref: '#/definitions/ModelAndView'
+        '204':
           description: No Content
-        "401":
+        '401':
           description: Unauthorized
-        "403":
+        '403':
           description: Forbidden
       deprecated: false
   /linemobile/addlinebycustomer/{id}:
@@ -275,7 +261,7 @@ paths:
       consumes:
         - application/json
       produces:
-        - "*/*"
+        - '*/*'
       parameters:
         - name: id
           in: path
@@ -288,21 +274,21 @@ paths:
           description: model
           required: true
           schema:
-            $ref: "#/definitions/LineMobileFrom"
+            $ref: '#/definitions/LineMobileFrom'
       responses:
-        "200":
+        '200':
           description: OK
           schema:
             type: object
             additionalProperties:
               type: object
-        "201":
+        '201':
           description: Created
-        "401":
+        '401':
           description: Unauthorized
-        "403":
+        '403':
           description: Forbidden
-        "404":
+        '404':
           description: Not Found
       deprecated: false
   /linemobile/cancellinemobile/{id}:
@@ -314,7 +300,7 @@ paths:
       consumes:
         - application/json
       produces:
-        - "*/*"
+        - '*/*'
       parameters:
         - name: id
           in: path
@@ -323,22 +309,22 @@ paths:
           type: integer
           format: int32
       responses:
-        "200":
+        '200':
           description: OK
           schema:
             type: object
             additionalProperties:
               type: object
-        "201":
+        '201':
           description: Created
-        "401":
+        '401':
           description: Unauthorized
-        "403":
+        '403':
           description: Forbidden
-        "404":
+        '404':
           description: Not Found
       deprecated: false
-  /offer/addofferbyline/{id}:
+  /offer/addofferbyline/{id}/{code}:
     post:
       tags:
         - offer-controller
@@ -347,34 +333,33 @@ paths:
       consumes:
         - application/json
       produces:
-        - "*/*"
+        - '*/*'
       parameters:
+        - name: code
+          in: path
+          description: code
+          required: true
+          type: string
         - name: id
           in: path
           description: id
           required: true
           type: integer
           format: int32
-        - in: body
-          name: model
-          description: model
-          required: true
-          schema:
-            $ref: "#/definitions/OfferFrom"
       responses:
-        "200":
+        '200':
           description: OK
           schema:
             type: object
             additionalProperties:
               type: object
-        "201":
+        '201':
           description: Created
-        "401":
+        '401':
           description: Unauthorized
-        "403":
+        '403':
           description: Forbidden
-        "404":
+        '404':
           description: Not Found
       deprecated: false
   /offer/cacheByCode/{code}:
@@ -384,7 +369,7 @@ paths:
       summary: findByCode
       operationId: findByCodeUsingGET
       produces:
-        - "*/*"
+        - '*/*'
       parameters:
         - name: code
           in: path
@@ -392,15 +377,37 @@ paths:
           required: true
           type: string
       responses:
-        "200":
+        '200':
           description: OK
           schema:
-            $ref: "#/definitions/Optional«Offer»"
-        "401":
+            $ref: '#/definitions/Optional«Offer»'
+        '401':
           description: Unauthorized
-        "403":
+        '403':
           description: Forbidden
-        "404":
+        '404':
+          description: Not Found
+      deprecated: false
+  /offer/cacheCatalog/:
+    get:
+      tags:
+        - offer-controller
+      summary: findAll
+      operationId: findAllUsingGET_1
+      produces:
+        - '*/*'
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Offer'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
           description: Not Found
       deprecated: false
   /reports/getLineMobilebydocument/{typedocument}/{numberdocument}:
@@ -410,7 +417,7 @@ paths:
       summary: findLineMobileByDocument
       operationId: findLineMobileByDocumentUsingGET
       produces:
-        - "*/*"
+        - '*/*'
       parameters:
         - name: numberdocument
           in: path
@@ -423,17 +430,17 @@ paths:
           required: true
           type: string
       responses:
-        "200":
+        '200':
           description: OK
           schema:
             type: array
             items:
-              $ref: "#/definitions/LineMobile"
-        "401":
+              $ref: '#/definitions/LineMobile'
+        '401':
           description: Unauthorized
-        "403":
+        '403':
           description: Forbidden
-        "404":
+        '404':
           description: Not Found
       deprecated: false
   /reports/getOffersByDates/{datestart}/{dateend}:
@@ -443,7 +450,7 @@ paths:
       summary: getOffersByDates
       operationId: getOffersByDatesUsingGET
       produces:
-        - "*/*"
+        - '*/*'
       parameters:
         - name: dateend
           in: path
@@ -456,17 +463,17 @@ paths:
           required: true
           type: string
       responses:
-        "200":
+        '200':
           description: OK
           schema:
             type: array
             items:
-              $ref: "#/definitions/Customer"
-        "401":
+              $ref: '#/definitions/Customer'
+        '401':
           description: Unauthorized
-        "403":
+        '403':
           description: Forbidden
-        "404":
+        '404':
           description: Not Found
       deprecated: false
 definitions:
@@ -484,7 +491,7 @@ definitions:
       lineMobile:
         type: array
         items:
-          $ref: "#/definitions/LineMobile"
+          $ref: '#/definitions/LineMobile'
       numberdocument:
         type: string
       typedocument:
@@ -520,7 +527,7 @@ definitions:
       offer:
         type: array
         items:
-          $ref: "#/definitions/Offer"
+          $ref: '#/definitions/Offer'
       state:
         type: boolean
       typeplane:
@@ -621,7 +628,7 @@ definitions:
           - 510 NOT_EXTENDED
           - 511 NETWORK_AUTHENTICATION_REQUIRED
       view:
-        $ref: "#/definitions/View"
+        $ref: '#/definitions/View'
       viewName:
         type: string
     title: ModelAndView
@@ -640,14 +647,6 @@ definitions:
         type: integer
         format: int32
     title: Offer
-  OfferFrom:
-    type: object
-    properties:
-      dateend:
-        type: string
-      datestart:
-        type: string
-    title: OfferFrom
   Optional«Customer»:
     type: object
     properties:
